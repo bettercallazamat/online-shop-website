@@ -14,19 +14,21 @@
 <body>
     <div class="wrapper">
         <nav class="navbar">
-            <div class="navbar-left d-md-flex align-items-md-center">
-                <a class="navbar-brand p-0" href="#"><img src="./imgs/logo.png" alt="Logo"></a>
-                <ul class="nav">
-                    <li class="nav-item"><a class="nav-link active highlight-text" href="#"><i class="pr-2 fas fa-home"></i>HOME</a></li>
-                    <li class="nav-item"><a class="nav-link secondary-text" href="#"><i class="pr-2 fas fa-th"></i>COLLECTIONS</a></li>
-                    <li class="nav-item"><a class="nav-link secondary-text" href="#"><i class="pr-2 fas fa-shopping-basket"></i>PURCHASE LIST</a></li>
-                    <li class="nav-item highlight-bg"><a class="nav-link text-white" href="#">POST AN AD</a></li>
-                </ul>
-            </div>
-            <div class="navbar-right">
-                <a class="pl-2 secondary-text" href="#"><i class="fas fa-envelope"></i></a>
-                <a class="pl-2 text-white" href="#">Nicolas Horn</a>
-                <a class="pl-2 text-white" href="#"><img class="rounded-circle" src="./imgs/profile-photo.jpg" alt="profile image"></a>
+            <div class="navbar-inner limited-width">
+                <div class="navbar-left d-md-flex align-items-md-center">
+                    <a class="navbar-brand p-0" href="#"><img src="./imgs/logo.png" alt="Logo"></a>
+                    <ul class="nav">
+                        <li class="nav-item"><a class="nav-link active highlight-text" href="#"><i class="pr-2 fas fa-home"></i>HOME</a></li>
+                        <li class="nav-item"><a class="nav-link secondary-text" href="#"><i class="pr-2 fas fa-th"></i>COLLECTIONS</a></li>
+                        <li class="nav-item"><a class="nav-link secondary-text" href="#"><i class="pr-2 fas fa-shopping-basket"></i>PURCHASE LIST</a></li>
+                        <li class="nav-item highlight-bg"><a class="nav-link text-white" href="#">POST AN AD</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-right">
+                    <a class="pl-2 secondary-text" href="#"><i class="fas fa-envelope"></i></a>
+                    <a class="pl-2 text-white" href="#">Nicolas Horn</a>
+                    <a class="pl-2 text-white" href="#"><img class="rounded-circle" src="./imgs/profile-photo.jpg" alt="profile image"></a>
+                </div>
             </div>
         </nav>
 
@@ -54,7 +56,7 @@
             </form>
         </header>
 
-        <section class="hot-ads container-fluid">
+        <section class="hot-ads container-fluid limited-width">
             <h3 class="row secondary-text mb-0 mt-3">HOT ADS</h3>
             <div class="hot-ads-container p-3 pb-4 row d-flex justify-content-center align-items-center">
                 <button class="hot-ads-container-controllers d-flex justify-content-center align-items-center"><i class="fas fa-chevron-left"></i></button>
@@ -74,142 +76,144 @@
             </div>
         </section>
 
-        <div class="categories-wrapper ">
-            <section class="category mb-5">
-                <div class="category-header d-flex justify-content-between align-items-center p-3 border-bottom">
-                    <div class="category-header-left d-flex justify-content-center align-items-end">
-                        <i class="secondary-text fas fa-desktop"></i>
-                        <h3 class="main-text mb-0 pl-3 pr-2 d-inline font-weight-bold">Electronics</h3>
-                        <span class="secondary-text">(subcategory, subcategory, subcategory, subcategory)</span>
+        <div class="categories-wrapper">
+            <div class="categories-wrapper-inner limited-width">
+                <section class="category mb-5">
+                    <div class="category-header d-flex justify-content-between align-items-center p-3 border-bottom">
+                        <div class="category-header-left d-flex justify-content-center align-items-end">
+                            <i class="secondary-text fas fa-desktop"></i>
+                            <h3 class="main-text mb-0 pl-3 pr-2 d-inline font-weight-bold">Electronics</h3>
+                            <span class="secondary-text">(subcategory, subcategory, subcategory, subcategory)</span>
+                        </div>
+                        <a class="highlight-text font-weight-bold" href="#">View All</a>
                     </div>
-                    <a class="highlight-text font-weight-bold" href="#">View All</a>
-                </div>
-                <div class="category-content py-3 position-relative">
-                    <div class="category-content-scrolling-wrapper">
-                        <div class="card d-inline-block mr-2">
-                            <img class="card-img-top" src="./imgs/sample-img.jpg" alt="">
-                            <div class="card-body p-2">
-                                <h5 class="card-title m-0">Card title name bla blah blah</h5>
-                                <span class="d-block highlight-text mb-2">Used</span>
-                                <span class="d-block">From Lalalaland Coming Out</span>
-                                <div class="card-bottom d-flex justify-content-between mt-3">
-                                    <a class="btn border-secondary secondary-text btn-sm" href="#">+</a>
-                                    <strong class="highlight-text">$450</strong>
+                    <div class="category-content py-3 position-relative">
+                        <div class="category-content-scrolling-wrapper">
+                            <div class="card d-inline-block mr-2">
+                                <img class="card-img-top" src="./imgs/sample-img.jpg" alt="">
+                                <div class="card-body p-2">
+                                    <h5 class="card-title m-0">Card title name bla blah blah</h5>
+                                    <span class="d-block highlight-text mb-2">Used</span>
+                                    <span class="d-block">From Lalalaland Coming Out</span>
+                                    <div class="card-bottom d-flex justify-content-between mt-3">
+                                        <a class="btn border-secondary secondary-text btn-sm" href="#">+</a>
+                                        <strong class="highlight-text">$450</strong>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card d-inline-block mr-2">
+                                <img class="card-img-top" src="./imgs/sample-img.jpg" alt="">
+                                <div class="card-body p-2">
+                                    <h5 class="card-title m-0">Card title name bla blah blah</h5>
+                                    <span class="d-block highlight-text mb-2">Used</span>
+                                    <span class="d-block">From Lalalaland Coming Out</span>
+                                    <div class="card-bottom d-flex justify-content-between mt-3">
+                                        <a class="btn border-secondary secondary-text btn-sm" href="#">+</a>
+                                        <strong class="highlight-text">$450</strong>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card d-inline-block mr-2">
+                                <img class="card-img-top" src="./imgs/sample-img.jpg" alt="">
+                                <div class="card-body p-2">
+                                    <h5 class="card-title m-0">Card title name bla blah blah</h5>
+                                    <span class="d-block highlight-text mb-2">Used</span>
+                                    <span class="d-block">From Lalalaland Coming Out</span>
+                                    <div class="card-bottom d-flex justify-content-between mt-3">
+                                        <a class="btn border-secondary secondary-text btn-sm" href="#">+</a>
+                                        <strong class="highlight-text">$450</strong>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card d-inline-block mr-2">
+                                <img class="card-img-top" src="./imgs/sample-img.jpg" alt="">
+                                <div class="card-body p-2">
+                                    <h5 class="card-title m-0">Card title name bla blah blah</h5>
+                                    <span class="d-block highlight-text mb-2">Used</span>
+                                    <span class="d-block">From Lalalaland Coming Out</span>
+                                    <div class="card-bottom d-flex justify-content-between mt-3">
+                                        <a class="btn border-secondary secondary-text btn-sm" href="#">+</a>
+                                        <strong class="highlight-text">$450</strong>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="card d-inline-block mr-2">
+                                <img class="card-img-top" src="./imgs/sample-img.jpg" alt="">
+                                <div class="card-body p-2">
+                                    <h5 class="card-title m-0">Card title name bla blah blah</h5>
+                                    <span class="d-block highlight-text mb-2">Used</span>
+                                    <span class="d-block">From Lalalaland Coming Out</span>
+                                    <div class="card-bottom d-flex justify-content-between mt-3">
+                                        <a class="btn border-secondary secondary-text btn-sm" href="#">+</a>
+                                        <strong class="highlight-text">$450</strong>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="card d-inline-block mr-2">
+                                <img class="card-img-top" src="./imgs/sample-img.jpg" alt="">
+                                <div class="card-body p-2">
+                                    <h5 class="card-title m-0">Card title name bla blah blah</h5>
+                                    <span class="d-block highlight-text mb-2">Used</span>
+                                    <span class="d-block">From Lalalaland Coming Out</span>
+                                    <div class="card-bottom d-flex justify-content-between mt-3">
+                                        <a class="btn border-secondary secondary-text btn-sm" href="#">+</a>
+                                        <strong class="highlight-text">$450</strong>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card d-inline-block mr-2">
+                                <img class="card-img-top" src="./imgs/sample-img.jpg" alt="">
+                                <div class="card-body p-2">
+                                    <h5 class="card-title m-0">Card title name bla blah blah</h5>
+                                    <span class="d-block highlight-text mb-2">Used</span>
+                                    <span class="d-block">From Lalalaland Coming Out</span>
+                                    <div class="card-bottom d-flex justify-content-between mt-3">
+                                        <a class="btn border-secondary secondary-text btn-sm" href="#">+</a>
+                                        <strong class="highlight-text">$450</strong>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card d-inline-block mr-2">
+                                <img class="card-img-top" src="./imgs/sample-img.jpg" alt="">
+                                <div class="card-body p-2">
+                                    <h5 class="card-title m-0">Card title name bla blah blah</h5>
+                                    <span class="d-block highlight-text mb-2">Used</span>
+                                    <span class="d-block">From Lalalaland Coming Out</span>
+                                    <div class="card-bottom d-flex justify-content-between mt-3">
+                                        <a class="btn border-secondary secondary-text btn-sm" href="#">+</a>
+                                        <strong class="highlight-text">$450</strong>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card d-inline-block mr-2">
+                                <img class="card-img-top" src="./imgs/sample-img.jpg" alt="">
+                                <div class="card-body p-2">
+                                    <h5 class="card-title m-0">Card title name bla blah blah</h5>
+                                    <span class="d-block highlight-text mb-2">Used</span>
+                                    <span class="d-block">From Lalalaland Coming Out</span>
+                                    <div class="card-bottom d-flex justify-content-between mt-3">
+                                        <a class="btn border-secondary secondary-text btn-sm" href="#">+</a>
+                                        <strong class="highlight-text">$450</strong>
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="card d-inline-block mr-2">
-                            <img class="card-img-top" src="./imgs/sample-img.jpg" alt="">
-                            <div class="card-body p-2">
-                                <h5 class="card-title m-0">Card title name bla blah blah</h5>
-                                <span class="d-block highlight-text mb-2">Used</span>
-                                <span class="d-block">From Lalalaland Coming Out</span>
-                                <div class="card-bottom d-flex justify-content-between mt-3">
-                                    <a class="btn border-secondary secondary-text btn-sm" href="#">+</a>
-                                    <strong class="highlight-text">$450</strong>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="card d-inline-block mr-2">
-                            <img class="card-img-top" src="./imgs/sample-img.jpg" alt="">
-                            <div class="card-body p-2">
-                                <h5 class="card-title m-0">Card title name bla blah blah</h5>
-                                <span class="d-block highlight-text mb-2">Used</span>
-                                <span class="d-block">From Lalalaland Coming Out</span>
-                                <div class="card-bottom d-flex justify-content-between mt-3">
-                                    <a class="btn border-secondary secondary-text btn-sm" href="#">+</a>
-                                    <strong class="highlight-text">$450</strong>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="card d-inline-block mr-2">
-                            <img class="card-img-top" src="./imgs/sample-img.jpg" alt="">
-                            <div class="card-body p-2">
-                                <h5 class="card-title m-0">Card title name bla blah blah</h5>
-                                <span class="d-block highlight-text mb-2">Used</span>
-                                <span class="d-block">From Lalalaland Coming Out</span>
-                                <div class="card-bottom d-flex justify-content-between mt-3">
-                                    <a class="btn border-secondary secondary-text btn-sm" href="#">+</a>
-                                    <strong class="highlight-text">$450</strong>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="card d-inline-block mr-2">
-                            <img class="card-img-top" src="./imgs/sample-img.jpg" alt="">
-                            <div class="card-body p-2">
-                                <h5 class="card-title m-0">Card title name bla blah blah</h5>
-                                <span class="d-block highlight-text mb-2">Used</span>
-                                <span class="d-block">From Lalalaland Coming Out</span>
-                                <div class="card-bottom d-flex justify-content-between mt-3">
-                                    <a class="btn border-secondary secondary-text btn-sm" href="#">+</a>
-                                    <strong class="highlight-text">$450</strong>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="card d-inline-block mr-2">
-                            <img class="card-img-top" src="./imgs/sample-img.jpg" alt="">
-                            <div class="card-body p-2">
-                                <h5 class="card-title m-0">Card title name bla blah blah</h5>
-                                <span class="d-block highlight-text mb-2">Used</span>
-                                <span class="d-block">From Lalalaland Coming Out</span>
-                                <div class="card-bottom d-flex justify-content-between mt-3">
-                                    <a class="btn border-secondary secondary-text btn-sm" href="#">+</a>
-                                    <strong class="highlight-text">$450</strong>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="card d-inline-block mr-2">
-                            <img class="card-img-top" src="./imgs/sample-img.jpg" alt="">
-                            <div class="card-body p-2">
-                                <h5 class="card-title m-0">Card title name bla blah blah</h5>
-                                <span class="d-block highlight-text mb-2">Used</span>
-                                <span class="d-block">From Lalalaland Coming Out</span>
-                                <div class="card-bottom d-flex justify-content-between mt-3">
-                                    <a class="btn border-secondary secondary-text btn-sm" href="#">+</a>
-                                    <strong class="highlight-text">$450</strong>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="card d-inline-block mr-2">
-                            <img class="card-img-top" src="./imgs/sample-img.jpg" alt="">
-                            <div class="card-body p-2">
-                                <h5 class="card-title m-0">Card title name bla blah blah</h5>
-                                <span class="d-block highlight-text mb-2">Used</span>
-                                <span class="d-block">From Lalalaland Coming Out</span>
-                                <div class="card-bottom d-flex justify-content-between mt-3">
-                                    <a class="btn border-secondary secondary-text btn-sm" href="#">+</a>
-                                    <strong class="highlight-text">$450</strong>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="card d-inline-block mr-2">
-                            <img class="card-img-top" src="./imgs/sample-img.jpg" alt="">
-                            <div class="card-body p-2">
-                                <h5 class="card-title m-0">Card title name bla blah blah</h5>
-                                <span class="d-block highlight-text mb-2">Used</span>
-                                <span class="d-block">From Lalalaland Coming Out</span>
-                                <div class="card-bottom d-flex justify-content-between mt-3">
-                                    <a class="btn border-secondary secondary-text btn-sm" href="#">+</a>
-                                    <strong class="highlight-text">$450</strong>
-                                </div>
-                            </div>
-                        </div>
+                        <button class="scroll-controller-left"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+                        <button class="scroll-controller-right"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
                     </div>
-
-                    <button class="scroll-controller-left"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
-                    <button class="scroll-controller-right"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
-                </div>
-            </section>
+                </section>
+            </div>
         </div>
-        <footer class="main-footer container-fluid">
+        <footer class="main-footer container-fluid limited-width">
             <div class="row justify-content-between p-3">
                 <div class="col-md-3">
                     <img class="col-md-8 d-block m-auto" src="./imgs/logo.png" alt="">
