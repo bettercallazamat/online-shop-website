@@ -2,6 +2,7 @@
   /* font-family:  */
   font-family: inherit;
   box-sizing: border-box;
+  color: #383838;
 }
 
 .limited-width {
@@ -98,7 +99,7 @@ a:hover {
 .main-header input[type="submit"] {
   background-color: #383838;
   color: #888;
-  padding: 0;
+  padding: 0 25px;
 }
 
 .main-header input[type="submit"]:hover {
@@ -245,4 +246,133 @@ a:hover {
 .main-footer .view-options button:hover {
   background-color: #d35266;
   color: #f6f6f6;
+}
+
+/* ==== Search results page ==== */
+
+.main-header h2 {
+  font-size: 30px;
+}
+
+.main-header .subtitle {
+  font-size: 20px;
+}
+
+.search-main {
+  background-color: #f6f6f6;
+}
+
+.search-main-inner {
+  display: flex;
+}
+
+.search-filters {
+  /* width: 250px; */
+  flex-basis: 220px;
+  margin-right: 20px;
+}
+
+.search-filters strong {
+  border-bottom: 1px solid #888;
+}
+
+.search-filters label {
+  padding-left: 5px;
+}
+
+input[type="checkbox"]:checked + label {
+  font-weight: bold;
+}
+
+.search-results {
+  border-right: 1px solid #888;
+  border-left: 1px solid #888;
+  width: calc(100% - 240px);
+}
+
+.search-result {
+  border-top: 1px solid #888;
+  border-bottom: 1px solid #888;
+}
+
+div.search-result:hover {
+  background-color: #fff;
+}
+
+.search-result img {
+  width: 400px;
+  height: 280px;
+  object-fit: cover;
+}
+
+.search-result-img-contollers {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.search-result-img-contoller {
+  background-color: #383838;
+}
+
+.search-result-img-contoller:first-of-type {
+  margin-right: -5px;
+}
+
+.search-result-img-contoller:hover {
+  background-color: #888;
+}
+
+.search-result-text h3 {
+  font-size: 25px;
+  padding-right: 40px;
+}
+
+.button-add {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  border-color: #888;
+  color: #888;
+}
+
+.button-add:hover {
+  border: 2px solid #d35266;
+}
+
+.price-tag-with-cta {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+}
+
+.price-tag,
+.cta-call {
+  border: #888;
+  background-color: #d35266;
+  color: #fff;
+}
+
+.cta-call:hover {
+  background-color: #383838;
+  color: #f6f6f6;
+}
+
+.search-result-page-contollers a {
+  border: 1px solid #888;
+  border-radius: 5px;
+  color: #888;
+  width: 30px;
+  height: 30px;
+  line-height: 29px;
+}
+
+.search-result-page-contollers .active,
+.search-result-page-contollers a:hover {
+  background-color: #d35266;
+  color: #f6f6f6;
+}
+
+.search-results .search-result-page-contollers span {
+  line-height: 40px;
 }

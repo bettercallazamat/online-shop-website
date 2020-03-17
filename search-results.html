@@ -12,7 +12,209 @@
         integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <title>Online shop | Search results</title>
 </head>
+    <div class="wrapper">
+        <nav class="navbar">
+            <div class="navbar-left d-md-flex align-items-md-center">
+                <a class="navbar-brand p-0" href="#"><img src="./imgs/logo.png" alt="Logo"></a>
+                <ul class="nav">
+                    <li class="nav-item"><a class="nav-link active highlight-text" href="#"><i
+                                class="pr-2 fas fa-home"></i>HOME</a></li>
+                    <li class="nav-item"><a class="nav-link secondary-text" href="#"><i
+                                class="pr-2 fas fa-th"></i>COLLECTIONS</a></li>
+                    <li class="nav-item"><a class="nav-link secondary-text" href="#"><i
+                                class="pr-2 fas fa-shopping-basket"></i>PURCHASE LIST</a></li>
+                    <li class="nav-item"><a class="nav-link highlight-bg posting-link" href="#">POST AN AD</a></li>
+                </ul>
+            </div>
+            <div class="navbar-right">
+                <a class="pl-2 secondary-text" href="#"><i class="fas fa-envelope"></i></a>
+                <a class="pl-2 text-white" href="#">Nicolas Horn</a>
+                <a class="pl-2 text-white" href="#"><img class="rounded-circle" src="./imgs/profile-photo.jpg"
+                        alt="profile image"></a>
+            </div>
+        </nav>
+        
+        <header class="main-header pb-5 pt-2 container-fluid">
+            <div class="header-title text-white d-block text-left col-md-12">
+                <h2 class="title mb-0">SHOPPING SHOP</h2>
+                <span class="subtitle">Buying and Selling Couldn't be Simpler than this!</span>
+            </div>
+            <form class="header-form row justify-content-center" action="" id="search-form">
+                <select class="col-md-auto mr-1" id="department" name="department" form="search-form">
+                    <option value="all">All Department</option>
+                    <option value="us">US</option>
+                    <option value="asia">Asia</option>
+                    <option value="europe">Europe</option>
+                </select>
+                <input class="col-md-3 mr-1" type="search" name="search" id="search" placeholder="What do you search for?">
+                <input class="col-md-3 mr-3" list="regions" name="regions" placeholder="Choose your region">
+                <datalist id="regions">
+                    <option value="All Countries">
+                    <option value="US">
+                    <option value="Asia">
+                    <option value="Europe">
+                </datalist>
+                <input class="col-md-auto" type="submit" value="Search">
+            </form>
+        </header>
+        <main class="search-main py-5">
+            <div class="search-main-inner limited-width">
+                <aside class="search-filters py-3">
+                    <input type="checkbox" id="rent" name="rent" value="Rent">
+                    <label class="mr-3" for="rent"> Rent</label>
+                    <input type="checkbox" id="own" name="own" value="Ownership">
+                    <label for="own">Ownership</label>
 
+                    <strong class="d-block mt-2 mb-1">Type</strong>
+                    <input type="checkbox" id="entire" name="entire" value="Entire">
+                    <label for="entire">Entire Place</label><br>
+                    <input type="checkbox" id="private" name="private" value="Private">
+                    <label for="entire">Private Room</label><br>
+                    <input type="checkbox" id="shared" name="shared" value="Shared">
+                    <label for="shared">Shared Room</label>
+
+                    <strong class="d-block mt-2 mb-1">Size</strong>
+                    <input type="checkbox" id="entire" name="entire" value="Entire">
+                    <label for="entire">Entire Place</label><br>
+                    <input type="checkbox" id="private" name="private" value="Private">
+                    <label for="entire">Private Room</label><br>
+                    <input type="checkbox" id="shared" name="shared" value="Shared">
+                    <label for="shared">Shared Room</label>
+
+                    <strong class="d-block mt-2 mb-1">Size</strong>
+                    <input type="checkbox" id="entire" name="entire" value="Entire">
+                    <label for="entire">Entire Place</label><br>
+                    <input type="checkbox" id="private" name="private" value="Private">
+                    <label for="entire">Private Room</label><br>
+                    <input type="checkbox" id="shared" name="shared" value="Shared">
+                    <label for="shared">Shared Room</label>
+                </aside>
+
+                <section class="search-results">
+                    <div class="search-info p-3">
+                        <span><strong>138</strong> Results for <strong>"Flat"</strong> Search at <strong>San Francisco</strong> in Category <strong>Real Estate</strong></span>
+                    </div>
+
+                    <div class="search-result d-flex p-3 mb-2">
+                        <div class="search-result-img-container position-relative">
+                            <img src="./imgs/sample-img.jpg" alt="">
+                            <div class="search-result-img-contollers">
+                                <a class="search-result-img-contoller d-inline-block" href="#"><i class="highlight-text px-3 fa fa-chevron-left" aria-hidden="true"></i></a>
+                                <a class="search-result-img-contoller d-inline-block" href="#"><i class="highlight-text px-3 fa fa-chevron-right" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                        <div class="search-result-text p-3 pl-4 position-relative">
+                            <h3 class="mb-0">Some title Lorem ipsum dolor sit, amet consectetur </h3>
+                            <span class="highlight-text font-weight-bold">200 M, rent</span>
+                            <p class="mb-0 my-3 text-secondary">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet aperiam magnam, maxime tempora voluptate eligendi
+                            similique animi ipsam facere, obcaecati voluptatem cum. Excepturi maiores in cupiditate ducimus aut cum ratione!</p>
+                            <span class="location d-block mb-3 text-secondary"><strong class="text-main">Location: </strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+                            <span class="date text-secondary">23 Nov, 2020</span>
+                            <button class="button-add"><i class="text-secondary fa fa-plus" aria-hidden="true"></i></button>
+                            <div class="price-tag-with-cta">
+                                <a href="#"><span class="cta-call d-inline-block px-3 py-2 mr-2 rounded">Give a Call</span></a>
+                                <span class="price-tag d-inline-block px-3 py-2 rounded">$150</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="search-result d-flex p-3 mb-2">
+                        <div class="search-result-img-container position-relative">
+                            <img src="./imgs/sample-img.jpg" alt="">
+                            <div class="search-result-img-contollers">
+                                <a class="search-result-img-contoller d-inline-block" href="#"><i
+                                        class="highlight-text px-3 fa fa-chevron-left" aria-hidden="true"></i></a>
+                                <a class="search-result-img-contoller d-inline-block" href="#"><i
+                                        class="highlight-text px-3 fa fa-chevron-right" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                        <div class="search-result-text p-3 pl-4 position-relative">
+                            <h3 class="mb-0">Some title Lorem ipsum dolor sit, amet consectetur </h3>
+                            <span class="highlight-text font-weight-bold">200 M, rent</span>
+                            <p class="mb-0 my-3 text-secondary">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet aperiam
+                                magnam, maxime tempora voluptate eligendi
+                                similique animi ipsam facere, obcaecati voluptatem cum. Excepturi maiores in cupiditate ducimus aut cum
+                                ratione!</p>
+                            <span class="location d-block mb-3 text-secondary"><strong class="text-main">Location: </strong>Lorem ipsum
+                                dolor sit amet, consectetur adipisicing elit.</span>
+                            <span class="date text-secondary">23 Nov, 2020</span>
+                            <button class="button-add"><i class="text-secondary fa fa-plus" aria-hidden="true"></i></button>
+                            <div class="price-tag-with-cta">
+                                <a href="#"><span class="cta-call d-inline-block px-3 py-2 mr-2 rounded">Give a Call</span></a>
+                                <span class="price-tag d-inline-block px-3 py-2 rounded">$150</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="search-result d-flex p-3 mb-2">
+                        <div class="search-result-img-container position-relative">
+                            <img src="./imgs/sample-img.jpg" alt="">
+                            <div class="search-result-img-contollers">
+                                <a class="search-result-img-contoller d-inline-block" href="#"><i
+                                        class="highlight-text px-3 fa fa-chevron-left" aria-hidden="true"></i></a>
+                                <a class="search-result-img-contoller d-inline-block" href="#"><i
+                                        class="highlight-text px-3 fa fa-chevron-right" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                        <div class="search-result-text p-3 pl-4 position-relative">
+                            <h3 class="mb-0">Some title Lorem ipsum dolor sit, amet consectetur </h3>
+                            <span class="highlight-text font-weight-bold">200 M, rent</span>
+                            <p class="mb-0 my-3 text-secondary">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet aperiam
+                                magnam, maxime tempora voluptate eligendi
+                                similique animi ipsam facere, obcaecati voluptatem cum. Excepturi maiores in cupiditate ducimus aut cum
+                                ratione!</p>
+                            <span class="location d-block mb-3 text-secondary"><strong class="text-main">Location: </strong>Lorem ipsum
+                                dolor sit amet, consectetur adipisicing elit.</span>
+                            <span class="date text-secondary">23 Nov, 2020</span>
+                            <button class="button-add"><i class="text-secondary fa fa-plus" aria-hidden="true"></i></button>
+                            <div class="price-tag-with-cta">
+                                <a href="#"><span class="cta-call d-inline-block px-3 py-2 mr-2 rounded">Give a Call</span></a>
+                                <span class="price-tag d-inline-block px-3 py-2 rounded">$150</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="search-result d-flex p-3 mb-2">
+                        <div class="search-result-img-container position-relative">
+                            <img src="./imgs/sample-img.jpg" alt="">
+                            <div class="search-result-img-contollers">
+                                <a class="search-result-img-contoller d-inline-block" href="#"><i
+                                        class="highlight-text px-3 fa fa-chevron-left" aria-hidden="true"></i></a>
+                                <a class="search-result-img-contoller d-inline-block" href="#"><i
+                                        class="highlight-text px-3 fa fa-chevron-right" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                        <div class="search-result-text p-3 pl-4 position-relative">
+                            <h3 class="mb-0">Some title Lorem ipsum dolor sit, amet consectetur </h3>
+                            <span class="highlight-text font-weight-bold">200 M, rent</span>
+                            <p class="mb-0 my-3 text-secondary">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet aperiam
+                                magnam, maxime tempora voluptate eligendi
+                                similique animi ipsam facere, obcaecati voluptatem cum. Excepturi maiores in cupiditate ducimus aut cum
+                                ratione!</p>
+                            <span class="location d-block mb-3 text-secondary"><strong class="text-main">Location: </strong>Lorem ipsum
+                                dolor sit amet, consectetur adipisicing elit.</span>
+                            <span class="date text-secondary">23 Nov, 2020</span>
+                            <button class="button-add"><i class="text-secondary fa fa-plus" aria-hidden="true"></i></button>
+                            <div class="price-tag-with-cta">
+                                <a href="#"><span class="cta-call d-inline-block px-3 py-2 mr-2 rounded">Give a Call</span></a>
+                                <span class="price-tag d-inline-block px-3 py-2 rounded">$150</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="search-result-page-contollers d-flex justify-content-center m-3">
+                        <a class="d-inline-block d-flex align-items-center justify-content-center mx-1 active" href="#">1</a>
+                        <a class="d-inline-block d-flex align-items-center justify-content-center mx-1" href="#">2</a>
+                        <a class="d-inline-block d-flex align-items-center justify-content-center mx-1" href="#">3</a>
+                        <a class="d-inline-block d-flex align-items-center justify-content-center mx-1" href="#">4</a>
+                        <span class="">...</span>
+                        <a class="d-inline-block d-flex align-items-center justify-content-center mx-1" href="#">12</a>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
