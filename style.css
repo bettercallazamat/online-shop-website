@@ -25,15 +25,17 @@
   background-color: #d35266;
 }
 
-.navbar {
-  background-color: #383838;
+a:hover {
+  color: #d35266;
 }
 
-.navbar-inner {
+.navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 80%;
+  width: 100%;
+  background-color: #383838;
+  padding: 0 5%;
 }
 
 .navbar-brand img {
@@ -44,14 +46,64 @@
   height: 45px;
 }
 
+.navbar a.posting-link {
+  color: #f6f6f6;
+}
+
+.navbar a.posting-link:hover {
+  background-color: #f6f6f6;
+  color: #d35266;
+}
+
 .main-header {
   background-color: #d35266;
   text-align: center;
 }
 
+.main-header h1 {
+  font-size: 45px;
+}
+
+.main-header span {
+  font-size: 20px;
+}
+
 .main-header input,
 .main-header select {
   height: 50px;
+  border: 0;
+  color: #888;
+}
+
+.main-header select {
+  border-radius: 0;
+  -webkit-appearance: none;
+  width: 150px;
+  padding-left: 25px;
+  padding-right: 10px;
+  background-image: url("./imgs/select-form-icon.png");
+  background-position: 10px 20px;
+  background-repeat: no-repeat;
+  background-size: 10px;
+}
+
+.main-header input[type="search"] {
+  padding: 0 10px;
+}
+
+.main-header input[list="regions"] {
+  padding: 0 10px;
+}
+
+.main-header input[type="submit"] {
+  background-color: #383838;
+  color: #888;
+  padding: 0;
+}
+
+.main-header input[type="submit"]:hover {
+  background-color: #f6f6f6;
+  color: #d35266;
 }
 
 .hot-ads h3 {
@@ -59,13 +111,22 @@
   font-size: 20px;
 }
 
+.hot-ads-carousel-right button:hover {
+  background-color: #383838;
+}
+
 .hot-ads-container-controllers {
   width: 50px;
   height: 50px;
+  border: 1px solid #888;
+  border-radius: 50%;
+  color: #d35266;
+  font-size: 25px;
 }
 
-.hot-ads-container-controllers i {
-  font-size: 25px;
+.hot-ads-container-controllers:hover {
+  background-color: #d35266;
+  color: #f6f6f6;
 }
 
 .hot-ads-option {
@@ -97,8 +158,6 @@
   overflow-x: scroll;
   overflow-y: hidden;
   white-space: nowrap;
-  margin-left: 58px;
-  margin-right: 58px;
 }
 
 .scroll-controller-left {
@@ -109,6 +168,9 @@
   margin: auto;
   height: 91%;
   width: 50px;
+  border: none;
+  background: rgb(246, 246, 246);
+  background: linear-gradient(90deg, rgba(246, 246, 246, 1) 0%, rgba(255, 255, 255, 1) 23%, rgba(246, 246, 246, 0.6) 50%, rgba(255, 250, 250, 0.4) 77%, rgba(246, 246, 246, 0.25) 100%);
 }
 
 .scroll-controller-right {
@@ -119,6 +181,20 @@
   margin: auto;
   height: 91%;
   width: 50px;
+  border: none;
+  background: rgb(246, 246, 246);
+  background: linear-gradient(90deg, rgba(246, 246, 246, 0.25) 0%, rgba(255, 255, 255, 0.4) 23%, rgba(246, 246, 246, 0.6) 50%, rgba(255, 250, 250, 1) 77%, rgba(246, 246, 246, 1) 100%);
+}
+
+.scroll-controller-left i,
+.scroll-controller-right i {
+  font-size: 25px;
+}
+
+.scroll-controller-left:hover,
+.scroll-controller-right:hover {
+  background: #f6f6f6;
+  box-shadow: 1px 1px 10px #888;
 }
 
 .category-content .card {
@@ -137,6 +213,7 @@
 .card-bottom a {
   width: 30px;
   height: 30px;
+  font-size: 20px;
 }
 
 .main-footer img {
@@ -155,4 +232,17 @@
   font-size: 20px;
   border-bottom: 3px solid #d35266;
   padding-bottom: 5px;
+}
+
+.main-footer .view-options span {
+  width: 100px;
+}
+
+.main-footer .view-options button {
+  width: 90px;
+}
+
+.main-footer .view-options button:hover {
+  background-color: #d35266;
+  color: #f6f6f6;
 }

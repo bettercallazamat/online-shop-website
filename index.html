@@ -14,49 +14,47 @@
 <body>
     <div class="wrapper">
         <nav class="navbar">
-            <div class="navbar-inner limited-width">
-                <div class="navbar-left d-md-flex align-items-md-center">
-                    <a class="navbar-brand p-0" href="#"><img src="./imgs/logo.png" alt="Logo"></a>
-                    <ul class="nav">
-                        <li class="nav-item"><a class="nav-link active highlight-text" href="#"><i class="pr-2 fas fa-home"></i>HOME</a></li>
-                        <li class="nav-item"><a class="nav-link secondary-text" href="#"><i class="pr-2 fas fa-th"></i>COLLECTIONS</a></li>
-                        <li class="nav-item"><a class="nav-link secondary-text" href="#"><i class="pr-2 fas fa-shopping-basket"></i>PURCHASE LIST</a></li>
-                        <li class="nav-item highlight-bg"><a class="nav-link text-white" href="#">POST AN AD</a></li>
-                    </ul>
-                </div>
-                <div class="navbar-right">
-                    <a class="pl-2 secondary-text" href="#"><i class="fas fa-envelope"></i></a>
-                    <a class="pl-2 text-white" href="#">Nicolas Horn</a>
-                    <a class="pl-2 text-white" href="#"><img class="rounded-circle" src="./imgs/profile-photo.jpg" alt="profile image"></a>
-                </div>
+            <div class="navbar-left d-md-flex align-items-md-center">
+                <a class="navbar-brand p-0" href="#"><img src="./imgs/logo.png" alt="Logo"></a>
+                <ul class="nav">
+                    <li class="nav-item"><a class="nav-link active highlight-text" href="#"><i class="pr-2 fas fa-home"></i>HOME</a></li>
+                    <li class="nav-item"><a class="nav-link secondary-text" href="#"><i class="pr-2 fas fa-th"></i>COLLECTIONS</a></li>
+                    <li class="nav-item"><a class="nav-link secondary-text" href="#"><i class="pr-2 fas fa-shopping-basket"></i>PURCHASE LIST</a></li>
+                    <li class="nav-item"><a class="nav-link highlight-bg posting-link" href="#">POST AN AD</a></li>
+                </ul>
+            </div>
+            <div class="navbar-right">
+                <a class="pl-2 secondary-text" href="#"><i class="fas fa-envelope"></i></a>
+                <a class="pl-2 text-white" href="#">Nicolas Horn</a>
+                <a class="pl-2 text-white" href="#"><img class="rounded-circle" src="./imgs/profile-photo.jpg" alt="profile image"></a>
             </div>
         </nav>
 
-        <header class="main-header pb-5 pt-2">
+        <header class="main-header pb-5 pt-2 container-fluid">
             <div class="header-title text-white py-5 d-block">
                 <h1>SHOPPING SHOP</h1>
                 <span>Buying and Selling Couldn't be Simpler than this!</span>    
             </div>
-            <form class="header-form" action="" id="search-form">
-                <select class="" id="department" name="department" form="search-form">
+            <form class="header-form row justify-content-center" action="" id="search-form">
+                <select class="col-md-auto mr-1" id="department" name="department" form="search-form">
                     <option value="all">All Department</option>
                     <option value="us">US</option>
                     <option value="asia">Asia</option>
                     <option value="europe">Europe</option>
                 </select>
-                <input type="search" name="search" id="search" placeholder="What do you search for?">
-                <input list="regions" name="regions" placeholder="Choose your region">
+                <input class="col-md-3 mr-1" type="search" name="search" id="search" placeholder="What do you search for?">
+                <input class="col-md-3 mr-3" list="regions" name="regions" placeholder="Choose your region">
                 <datalist id="regions">
                     <option value="All Countries">
                     <option value="US">
                     <option value="Asia">
                     <option value="Europe">
                 </datalist>
-                <input type="submit" value="Search">
+                <input class="col-md-auto" type="submit" value="Search">
             </form>
         </header>
 
-        <section class="hot-ads container-fluid limited-width">
+        <section class="hot-ads container-fluid limited-width px-5">
             <h3 class="row secondary-text mb-0 mt-3">HOT ADS</h3>
             <div class="hot-ads-container p-3 pb-4 row d-flex justify-content-center align-items-center">
                 <button class="hot-ads-container-controllers d-flex justify-content-center align-items-center"><i class="fas fa-chevron-left"></i></button>
@@ -82,7 +80,9 @@
                     <div class="category-header d-flex justify-content-between align-items-center p-3 border-bottom">
                         <div class="category-header-left d-flex justify-content-center align-items-end">
                             <i class="secondary-text fas fa-desktop"></i>
-                            <h3 class="main-text mb-0 pl-3 pr-2 d-inline font-weight-bold">Electronics</h3>
+                            <a class="d-flex align-self-end" href="#">
+                                <h3 class="main-text mb-0 pl-3 pr-2 d-inline font-weight-bold">Electronics</h3>
+                            </a>
                             <span class="secondary-text">(subcategory, subcategory, subcategory, subcategory)</span>
                         </div>
                         <a class="highlight-text font-weight-bold" href="#">View All</a>
@@ -96,7 +96,7 @@
                                     <span class="d-block highlight-text mb-2">Used</span>
                                     <span class="d-block">From Lalalaland Coming Out</span>
                                     <div class="card-bottom d-flex justify-content-between mt-3">
-                                        <a class="btn border-secondary secondary-text btn-sm" href="#">+</a>
+                                        <a class="btn border-secondary secondary-text btn-sm d-flex align-items-center" href="#">+</a>
                                         <strong class="highlight-text">$450</strong>
                                     </div>
                                 </div>
@@ -109,7 +109,7 @@
                                     <span class="d-block highlight-text mb-2">Used</span>
                                     <span class="d-block">From Lalalaland Coming Out</span>
                                     <div class="card-bottom d-flex justify-content-between mt-3">
-                                        <a class="btn border-secondary secondary-text btn-sm" href="#">+</a>
+                                        <a class="btn border-secondary secondary-text btn-sm d-flex align-items-center" href="#">+</a>
                                         <strong class="highlight-text">$450</strong>
                                     </div>
                                 </div>
@@ -122,7 +122,7 @@
                                     <span class="d-block highlight-text mb-2">Used</span>
                                     <span class="d-block">From Lalalaland Coming Out</span>
                                     <div class="card-bottom d-flex justify-content-between mt-3">
-                                        <a class="btn border-secondary secondary-text btn-sm" href="#">+</a>
+                                        <a class="btn border-secondary secondary-text btn-sm d-flex align-items-center" href="#">+</a>
                                         <strong class="highlight-text">$450</strong>
                                     </div>
                                 </div>
@@ -135,7 +135,7 @@
                                     <span class="d-block highlight-text mb-2">Used</span>
                                     <span class="d-block">From Lalalaland Coming Out</span>
                                     <div class="card-bottom d-flex justify-content-between mt-3">
-                                        <a class="btn border-secondary secondary-text btn-sm" href="#">+</a>
+                                        <a class="btn border-secondary secondary-text btn-sm d-flex align-items-center" href="#">+</a>
                                         <strong class="highlight-text">$450</strong>
                                     </div>
                                 </div>
@@ -148,7 +148,7 @@
                                     <span class="d-block highlight-text mb-2">Used</span>
                                     <span class="d-block">From Lalalaland Coming Out</span>
                                     <div class="card-bottom d-flex justify-content-between mt-3">
-                                        <a class="btn border-secondary secondary-text btn-sm" href="#">+</a>
+                                        <a class="btn border-secondary secondary-text btn-sm d-flex align-items-center" href="#">+</a>
                                         <strong class="highlight-text">$450</strong>
                                     </div>
                                 </div>
@@ -161,7 +161,7 @@
                                     <span class="d-block highlight-text mb-2">Used</span>
                                     <span class="d-block">From Lalalaland Coming Out</span>
                                     <div class="card-bottom d-flex justify-content-between mt-3">
-                                        <a class="btn border-secondary secondary-text btn-sm" href="#">+</a>
+                                        <a class="btn border-secondary secondary-text btn-sm d-flex align-items-center" href="#">+</a>
                                         <strong class="highlight-text">$450</strong>
                                     </div>
                                 </div>
@@ -174,7 +174,7 @@
                                     <span class="d-block highlight-text mb-2">Used</span>
                                     <span class="d-block">From Lalalaland Coming Out</span>
                                     <div class="card-bottom d-flex justify-content-between mt-3">
-                                        <a class="btn border-secondary secondary-text btn-sm" href="#">+</a>
+                                        <a class="btn border-secondary secondary-text btn-sm d-flex align-items-center" href="#">+</a>
                                         <strong class="highlight-text">$450</strong>
                                     </div>
                                 </div>
@@ -187,7 +187,7 @@
                                     <span class="d-block highlight-text mb-2">Used</span>
                                     <span class="d-block">From Lalalaland Coming Out</span>
                                     <div class="card-bottom d-flex justify-content-between mt-3">
-                                        <a class="btn border-secondary secondary-text btn-sm" href="#">+</a>
+                                        <a class="btn border-secondary secondary-text btn-sm d-flex align-items-center" href="#">+</a>
                                         <strong class="highlight-text">$450</strong>
                                     </div>
                                 </div>
@@ -200,15 +200,14 @@
                                     <span class="d-block highlight-text mb-2">Used</span>
                                     <span class="d-block">From Lalalaland Coming Out</span>
                                     <div class="card-bottom d-flex justify-content-between mt-3">
-                                        <a class="btn border-secondary secondary-text btn-sm" href="#">+</a>
+                                        <a class="btn border-secondary secondary-text btn-sm d-flex align-items-center" href="#">+</a>
                                         <strong class="highlight-text">$450</strong>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
-                        <button class="scroll-controller-left"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
-                        <button class="scroll-controller-right"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+                        <button class="scroll-controller-left"><i class="main-text fa fa-chevron-left" aria-hidden="true"></i></button>
+                        <button class="scroll-controller-right"><i class="main-text fa fa-chevron-right" aria-hidden="true"></i></button>
                     </div>
                 </section>
             </div>
@@ -240,8 +239,7 @@
                         <li class="pb-2"><a class="secondary-text" href="#">Category 7</a></li>
                     </ul>
                 </nav>
-    
-    
+
                 <nav class="footer-website-nav col-md-2">
                     <h3>NAVIGATION</h3>
                     <ul class="footer-website-nav-list p-0">
@@ -256,19 +254,19 @@
 
                 <div class="view-options align-self-center">
                     <div class="regions my-3">
-                        <span class="highlight-text">Region</span>
+                        <span class="highlight-text d-inline-block">Region</span>
                         <button class="btn border-secondary px-3">U.S.</button>
                         <button class="btn border-secondary px-3">Asia</button>
                         <button class="btn border-secondary px-3">Europe</button>
                     </div>
                     <div class="langs  my-3">
-                        <span class="highlight-text">LANGUAGE</span>
+                        <span class="highlight-text d-inline-block">LANGUAGE</span>
                         <button class="btn border-secondary px-3">English</button>
                         <button class="btn border-secondary px-3">Russian</button>
                         <button class="btn border-secondary px-3">Spanish</button>
                     </div>
                     <div class="currencies my-3">
-                        <span class="highlight-text">CURRENCY</span>
+                        <span class="highlight-text d-inline-block">CURRENCY</span>
                         <button class="btn border-secondary px-3">USD</button>
                         <button class="btn border-secondary px-3">RUB</button>
                         <button class="btn border-secondary px-3">EUR</button>
