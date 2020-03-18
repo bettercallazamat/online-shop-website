@@ -13,30 +13,31 @@
 </head>
 <body>
     <div class="wrapper">
-        <nav class="navbar">
-            <div class="navbar-left d-md-flex align-items-md-center">
+        <nav class="navbar py-1 px-lg-5">
+            <div class="navbar-left d-flex align-items-center pl-lx-5">
                 <a class="navbar-brand p-0" href="#"><img src="./imgs/logo.png" alt="Logo"></a>
-                <ul class="nav">
+                <ul class="nav d-none d-sm-flex">
                     <li class="nav-item"><a class="nav-link active highlight-text" href="#"><i class="pr-2 fas fa-home"></i>HOME</a></li>
                     <li class="nav-item"><a class="nav-link secondary-text" href="#"><i class="pr-2 fas fa-th"></i>COLLECTIONS</a></li>
                     <li class="nav-item"><a class="nav-link secondary-text" href="#"><i class="pr-2 fas fa-shopping-basket"></i>PURCHASE LIST</a></li>
-                    <li class="nav-item"><a class="nav-link highlight-bg posting-link" href="#">POST AN AD</a></li>
+                    <li class="nav-item  d-none d-md-flex"><a class="nav-link highlight-bg posting-link ml-4" href="#">POST AN AD</a></li>
                 </ul>
             </div>
-            <div class="navbar-right">
+            <div class="navbar-right d-none d-lg-inline-block pr-lx-5">
                 <a class="pl-2 secondary-text" href="#"><i class="fas fa-envelope"></i></a>
                 <a class="pl-2 text-white" href="#">Nicolas Horn</a>
                 <a class="pl-2 text-white" href="#"><img class="rounded-circle" src="./imgs/profile-photo.jpg" alt="profile image"></a>
             </div>
+            <a class="menu-button d-inline-block d-lg-none" href="#"><i class="highlight-text fas fa-bars"></i></a>
         </nav>
 
-        <header class="main-header pb-5 pt-2 container-fluid">
+        <header class="main-header pb-md-5 pt-md-2 container-fluid">
             <div class="header-title text-white py-5 d-block">
                 <h1>SHOPPING SHOP</h1>
                 <span>Buying and Selling Couldn't be Simpler than this!</span>    
             </div>
-            <form class="header-form row justify-content-center" action="" id="search-form">
-                <select class="col-md-auto mr-1" id="department" name="department" form="search-form">
+            <form class="header-form row justify-content-center d-none d-md-block" action="" id="search-form">
+                <select class="col-md-2 mr-1" id="department" name="department" form="search-form">
                     <option value="all">All Department</option>
                     <option value="us">US</option>
                     <option value="asia">Asia</option>
@@ -50,17 +51,17 @@
                     <option value="Asia">
                     <option value="Europe">
                 </datalist>
-                <input class="col-md-auto" type="submit" value="Search">
+                <input class="col-md-1" type="submit" value="Search">
             </form>
         </header>
 
         <section class="hot-ads container-fluid limited-width px-5">
-            <h3 class="row secondary-text mb-0 mt-3">HOT ADS</h3>
+            <h3 class="row secondary-text mb-0 mt-3 pl-3 pl-md-0">HOT ADS</h3>
             <div class="hot-ads-container p-3 pb-4 row d-flex justify-content-center align-items-center">
                 <button class="hot-ads-container-controllers d-flex justify-content-center align-items-center"><i class="fas fa-chevron-left"></i></button>
-                <div class="hot-ads-option d-flex align-items-md-center col-md">
-                    <img class="hot-ads-carousel-image col-md-3 pl-0" src="./imgs/sample-img.jpg" alt="Image">
-                    <div class="hot-ads-carousel-right col-md">
+                <div class="hot-ads-option d-md-flex align-items-md-center col-md">
+                    <img class="hot-ads-carousel-image d-none d-md-inline-block col-md-5 col-lg-3 pl-md-0" src="./imgs/sample-img.jpg" alt="Image">
+                    <div class="hot-ads-carousel-right col-12 col-md">
                         <h4 class="highlight-text">Product name</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis vitae, tenetur magnam ab error voluptatum ea eveniet
                             porro natus sequi! Animi earum repellendus debitis aspernatur a. Ad officiis dolores quaerat?</p>
@@ -206,21 +207,21 @@
                                 </div>
                             </div>
                         </div>
-                        <button class="scroll-controller-left"><i class="main-text fa fa-chevron-left" aria-hidden="true"></i></button>
-                        <button class="scroll-controller-right"><i class="main-text fa fa-chevron-right" aria-hidden="true"></i></button>
+                        <button class="scroll-controller-left main-text"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+                        <button class="scroll-controller-right main-text"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
                     </div>
                 </section>
             </div>
         </div>
         <footer class="main-footer container-fluid limited-width">
-            <div class="row justify-content-between p-3">
-                <div class="col-md-3">
+            <div class="row justify-content-around justify-content-lg-between p-3">
+                <div class="col-md-3 d-none d-md-inline-block">
                     <img class="col-md-8 d-block m-auto" src="./imgs/logo.png" alt="">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident quis ex recusandae dolore sed consequuntur, vero
                     doloribus, numquam accusantium, unde at odit nam quos. Eius, maiores? Quam eum dolorem deserunt!</p>
                 </div>
     
-                <nav class="footer-category-nav col-md-3">
+                <nav class="footer-category-nav col-6 col-md-4 col-lg-3">
                     <h3>CATEGORIES</h3>
                     <ul class="footer-category-nav-list p-0">
                         <li class="pb-2"><a class="secondary-text" href="#">Category 1</a></li>
@@ -240,7 +241,7 @@
                     </ul>
                 </nav>
 
-                <nav class="footer-website-nav col-md-2">
+                <nav class="footer-website-nav col-3 col-md-2">
                     <h3>NAVIGATION</h3>
                     <ul class="footer-website-nav-list p-0">
                         <li class="pb-2"><a class="secondary-text" href="#">Home</a></li>
@@ -252,24 +253,18 @@
                     </ul>
                 </nav>
 
-                <div class="view-options align-self-center">
+                <div class="view-options align-self-center d-none d-lg-inline-block">
                     <div class="regions my-3">
                         <span class="highlight-text d-inline-block">Region</span>
                         <button class="btn border-secondary px-3">U.S.</button>
-                        <button class="btn border-secondary px-3">Asia</button>
-                        <button class="btn border-secondary px-3">Europe</button>
                     </div>
-                    <div class="langs  my-3">
+                    <div class="langs my-3">
                         <span class="highlight-text d-inline-block">LANGUAGE</span>
                         <button class="btn border-secondary px-3">English</button>
-                        <button class="btn border-secondary px-3">Russian</button>
-                        <button class="btn border-secondary px-3">Spanish</button>
                     </div>
                     <div class="currencies my-3">
                         <span class="highlight-text d-inline-block">CURRENCY</span>
                         <button class="btn border-secondary px-3">USD</button>
-                        <button class="btn border-secondary px-3">RUB</button>
-                        <button class="btn border-secondary px-3">EUR</button>
                     </div>
                     
                 </div>

@@ -13,34 +13,36 @@
     <title>Online shop | Search results</title>
 </head>
     <div class="wrapper">
-        <nav class="navbar">
-            <div class="navbar-left d-md-flex align-items-md-center">
+        <nav class="navbar py-1 px-lg-5">
+            <div class="navbar-left d-flex align-items-center pl-lx-5">
                 <a class="navbar-brand p-0" href="#"><img src="./imgs/logo.png" alt="Logo"></a>
-                <ul class="nav">
+                <ul class="nav d-none d-sm-flex">
                     <li class="nav-item"><a class="nav-link active highlight-text" href="#"><i
                                 class="pr-2 fas fa-home"></i>HOME</a></li>
                     <li class="nav-item"><a class="nav-link secondary-text" href="#"><i
                                 class="pr-2 fas fa-th"></i>COLLECTIONS</a></li>
                     <li class="nav-item"><a class="nav-link secondary-text" href="#"><i
                                 class="pr-2 fas fa-shopping-basket"></i>PURCHASE LIST</a></li>
-                    <li class="nav-item"><a class="nav-link highlight-bg posting-link" href="#">POST AN AD</a></li>
+                    <li class="nav-item  d-none d-md-flex"><a class="nav-link highlight-bg posting-link ml-4" href="#">POST AN
+                            AD</a></li>
                 </ul>
             </div>
-            <div class="navbar-right">
+            <div class="navbar-right d-none d-lg-inline-block pr-lx-5">
                 <a class="pl-2 secondary-text" href="#"><i class="fas fa-envelope"></i></a>
                 <a class="pl-2 text-white" href="#">Nicolas Horn</a>
                 <a class="pl-2 text-white" href="#"><img class="rounded-circle" src="./imgs/profile-photo.jpg"
                         alt="profile image"></a>
             </div>
+            <a class="menu-button d-inline-block d-lg-none" href="#"><i class="highlight-text fas fa-bars"></i></a>
         </nav>
         
-        <header class="main-header pb-5 pt-2 container-fluid">
-            <div class="header-title text-white d-block text-left col-md-12">
-                <h2 class="title mb-0">SHOPPING SHOP</h2>
-                <span class="subtitle">Buying and Selling Couldn't be Simpler than this!</span>
+        <header class="main-header py-4 container-fluid">
+            <div class="header-title main-header-search text-white text-left row justify-content-center mb-3">
+                <h2 class="title mb-0 col-md-9">SHOPPING SHOP</h2>
+                <span class="subtitle col-md-9">Buying and Selling Couldn't be Simpler than this!</span>
             </div>
             <form class="header-form row justify-content-center" action="" id="search-form">
-                <select class="col-md-auto mr-1" id="department" name="department" form="search-form">
+                <select class="col-md-2 mr-1" id="department" name="department" form="search-form">
                     <option value="all">All Department</option>
                     <option value="us">US</option>
                     <option value="asia">Asia</option>
@@ -54,10 +56,11 @@
                     <option value="Asia">
                     <option value="Europe">
                 </datalist>
-                <input class="col-md-auto" type="submit" value="Search">
+                <input class="col-md-1" type="submit" value="Search">
             </form>
         </header>
-        <main class="search-main py-5">
+
+        <main class="search-main p-3">
             <div class="search-main-inner limited-width">
                 <aside class="search-filters py-3">
                     <input type="checkbox" id="rent" name="rent" value="Rent">

@@ -2,7 +2,6 @@
   /* font-family:  */
   font-family: inherit;
   box-sizing: border-box;
-  color: #383838;
 }
 
 .limited-width {
@@ -36,7 +35,7 @@ a:hover {
   justify-content: space-between;
   width: 100%;
   background-color: #383838;
-  padding: 0 5%;
+  padding: 0 3%;
 }
 
 .navbar-brand img {
@@ -54,6 +53,10 @@ a:hover {
 .navbar a.posting-link:hover {
   background-color: #f6f6f6;
   color: #d35266;
+}
+
+.menu-button {
+  font-size: 30px;
 }
 
 .main-header {
@@ -79,7 +82,7 @@ a:hover {
 .main-header select {
   border-radius: 0;
   -webkit-appearance: none;
-  width: 150px;
+  min-width: 150px;
   padding-left: 25px;
   padding-right: 10px;
   background-image: url("./imgs/select-form-icon.png");
@@ -100,6 +103,7 @@ a:hover {
   background-color: #383838;
   color: #888;
   padding: 0 25px;
+  min-width: fit-content;
 }
 
 .main-header input[type="submit"]:hover {
@@ -126,8 +130,7 @@ a:hover {
 }
 
 .hot-ads-container-controllers:hover {
-  background-color: #d35266;
-  color: #f6f6f6;
+  background-color: #383838;
 }
 
 .hot-ads-option {
@@ -196,6 +199,7 @@ a:hover {
 .scroll-controller-right:hover {
   background: #f6f6f6;
   box-shadow: 1px 1px 10px #888;
+  color: #d35266;
 }
 
 .category-content .card {
@@ -215,6 +219,10 @@ a:hover {
   width: 30px;
   height: 30px;
   font-size: 20px;
+}
+
+.card-bottom a:hover {
+  background-color: #383838;
 }
 
 .main-footer img {
@@ -240,7 +248,7 @@ a:hover {
 }
 
 .main-footer .view-options button {
-  width: 90px;
+  width: 150px;
 }
 
 .main-footer .view-options button:hover {
@@ -249,6 +257,9 @@ a:hover {
 }
 
 /* ==== Search results page ==== */
+.main-header-search {
+  margin-left: -45px;
+}
 
 .main-header h2 {
   font-size: 30px;
@@ -267,7 +278,6 @@ a:hover {
 }
 
 .search-filters {
-  /* width: 250px; */
   flex-basis: 220px;
   margin-right: 20px;
 }
@@ -299,9 +309,14 @@ div.search-result:hover {
   background-color: #fff;
 }
 
-.search-result img {
-  width: 400px;
-  height: 280px;
+.search-result-img-container {
+  min-width: 300px;
+  height: auto;
+}
+
+.search-result-img-container img {
+  height: 100%;
+  width: 100%;
   object-fit: cover;
 }
 
@@ -342,7 +357,7 @@ div.search-result:hover {
 
 .price-tag-with-cta {
   position: absolute;
-  bottom: 16px;
+  bottom: 0;
   right: 16px;
 }
 
@@ -358,7 +373,7 @@ div.search-result:hover {
   color: #f6f6f6;
 }
 
-.search-result-page-contollers a {
+.search-results .search-result-page-contollers a {
   border: 1px solid #888;
   border-radius: 5px;
   color: #888;
