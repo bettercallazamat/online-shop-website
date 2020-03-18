@@ -30,12 +30,14 @@ a:hover {
 }
 
 .navbar {
+  background-color: #383838;
+}
+
+.navbar-inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  background-color: #383838;
-  padding: 0 3%;
 }
 
 .navbar-brand img {
@@ -258,7 +260,7 @@ a:hover {
 
 /* ==== Search results page ==== */
 .main-header-search {
-  margin-left: -45px;
+  /* margin-left: -45px; */
 }
 
 .main-header h2 {
@@ -274,11 +276,11 @@ a:hover {
 }
 
 .search-main-inner {
-  display: flex;
+  /* display: flex; */
 }
 
 .search-filters {
-  flex-basis: 220px;
+  flex-basis: 176px;
   margin-right: 20px;
 }
 
@@ -297,7 +299,13 @@ input[type="checkbox"]:checked + label {
 .search-results {
   border-right: 1px solid #888;
   border-left: 1px solid #888;
-  width: calc(100% - 240px);
+  width: calc(100% - 196px);
+}
+
+@media only screen and (max-width: 768px) {
+  .search-results {
+    width: 100%;
+  }
 }
 
 .search-result {
@@ -309,9 +317,24 @@ div.search-result:hover {
   background-color: #fff;
 }
 
+@media only screen and (max-width: 992px) {
+  div.search-result-text h3 {
+    font-size: 20px;
+  }
+}
+
 .search-result-img-container {
-  min-width: 300px;
-  height: auto;
+  min-width: 270px;
+  /* max-height: 300px; */
+  align-self: center;
+}
+
+@media only screen and (max-width: 576px) {
+  .search-result-img-container {
+    min-width: 200px;
+    /* max-width: 315px; */
+    margin: 0 auto;
+  }
 }
 
 .search-result-img-container img {

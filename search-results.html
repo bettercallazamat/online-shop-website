@@ -13,106 +13,118 @@
     <title>Online shop | Search results</title>
 </head>
     <div class="wrapper">
-        <nav class="navbar py-1 px-lg-5">
-            <div class="navbar-left d-flex align-items-center pl-lx-5">
-                <a class="navbar-brand p-0" href="#"><img src="./imgs/logo.png" alt="Logo"></a>
-                <ul class="nav d-none d-sm-flex">
-                    <li class="nav-item"><a class="nav-link active highlight-text" href="#"><i
-                                class="pr-2 fas fa-home"></i>HOME</a></li>
-                    <li class="nav-item"><a class="nav-link secondary-text" href="#"><i
-                                class="pr-2 fas fa-th"></i>COLLECTIONS</a></li>
-                    <li class="nav-item"><a class="nav-link secondary-text" href="#"><i
-                                class="pr-2 fas fa-shopping-basket"></i>PURCHASE LIST</a></li>
-                    <li class="nav-item  d-none d-md-flex"><a class="nav-link highlight-bg posting-link ml-4" href="#">POST AN
-                            AD</a></li>
-                </ul>
+        <nav class="navbar py-1">
+            <div class="navbar-inner limited-width px-2">
+                <div class="navbar-left d-flex align-items-center">
+                    <a class="navbar-brand p-0" href="./index.html"><img src="./imgs/logo.png" alt="Logo"></a>
+                    <ul class="nav d-none d-sm-flex">
+                        <li class="nav-item"><a class="nav-link active highlight-text" href="#"><i
+                                    class="pr-2 fas fa-home"></i>HOME</a></li>
+                        <li class="nav-item"><a class="nav-link secondary-text" href="./search-results.html"><i
+                                    class="pr-2 fas fa-th"></i>COLLECTIONS</a></li>
+                        <li class="nav-item"><a class="nav-link secondary-text" href="#"><i
+                                    class="pr-2 fas fa-shopping-basket"></i>PURCHASE LIST</a></li>
+                        <li class="nav-item  d-none d-md-flex ml-4"><a class="nav-link highlight-bg posting-link" href="#">POST
+                                AN AD</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-right d-none d-lg-inline-block">
+                    <a class="pl-2 secondary-text" href="#"><i class="fas fa-envelope"></i></a>
+                    <a class="pl-2 text-white" href="#">Nicolas Horn</a>
+                    <a class="pl-2 text-white" href="#"><img class="rounded-circle" src="./imgs/profile-photo.jpg"
+                            alt="profile image"></a>
+                </div>
+                <a class="menu-button d-inline-block d-lg-none" href="#"><i class="highlight-text fas fa-bars"></i></a>
             </div>
-            <div class="navbar-right d-none d-lg-inline-block pr-lx-5">
-                <a class="pl-2 secondary-text" href="#"><i class="fas fa-envelope"></i></a>
-                <a class="pl-2 text-white" href="#">Nicolas Horn</a>
-                <a class="pl-2 text-white" href="#"><img class="rounded-circle" src="./imgs/profile-photo.jpg"
-                        alt="profile image"></a>
-            </div>
-            <a class="menu-button d-inline-block d-lg-none" href="#"><i class="highlight-text fas fa-bars"></i></a>
         </nav>
         
         <header class="main-header py-4 container-fluid">
-            <div class="header-title main-header-search text-white text-left row justify-content-center mb-3">
-                <h2 class="title mb-0 col-md-9">SHOPPING SHOP</h2>
-                <span class="subtitle col-md-9">Buying and Selling Couldn't be Simpler than this!</span>
+            <div class="header-title main-header-search text-white text-center row justify-content-center mb-3 d-block">
+                <h2 class="title mb-0">SHOPPING SHOP</h2>
+                <span class="subtitle">Buying and Selling Couldn't be Simpler than this!</span>
             </div>
-            <form class="header-form row justify-content-center" action="" id="search-form">
-                <select class="col-md-2 mr-1" id="department" name="department" form="search-form">
+            <form class="header-form row justify-content-center limited-width mx-5" action="" id="search-form">
+                <select class="col-md-2 mr-md-1 mb-1 mb-md-0" id="department" name="department" form="search-form">
                     <option value="all">All Department</option>
                     <option value="us">US</option>
                     <option value="asia">Asia</option>
                     <option value="europe">Europe</option>
                 </select>
-                <input class="col-md-3 mr-1" type="search" name="search" id="search" placeholder="What do you search for?">
-                <input class="col-md-3 mr-3" list="regions" name="regions" placeholder="Choose your region">
+                <input class="col-md-3 mr-md-1 mb-1 mb-md-0" type="search" name="search" id="search" placeholder="What do you search for?">
+                <input class="col-md-3 mr-md-1 mr-md-3 mb-1 mb-md-0" list="regions" name="regions" placeholder="Choose your region">
                 <datalist id="regions">
                     <option value="All Countries">
                     <option value="US">
                     <option value="Asia">
                     <option value="Europe">
                 </datalist>
-                <input class="col-md-1" type="submit" value="Search">
+                <input class="col col-md-1" type="submit" value="Search">
             </form>
         </header>
 
         <main class="search-main p-3">
-            <div class="search-main-inner limited-width">
-                <aside class="search-filters py-3">
-                    <input type="checkbox" id="rent" name="rent" value="Rent">
-                    <label class="mr-3" for="rent"> Rent</label>
-                    <input type="checkbox" id="own" name="own" value="Ownership">
-                    <label for="own">Ownership</label>
-
-                    <strong class="d-block mt-2 mb-1">Type</strong>
-                    <input type="checkbox" id="entire" name="entire" value="Entire">
-                    <label for="entire">Entire Place</label><br>
-                    <input type="checkbox" id="private" name="private" value="Private">
-                    <label for="entire">Private Room</label><br>
-                    <input type="checkbox" id="shared" name="shared" value="Shared">
-                    <label for="shared">Shared Room</label>
-
-                    <strong class="d-block mt-2 mb-1">Size</strong>
-                    <input type="checkbox" id="entire" name="entire" value="Entire">
-                    <label for="entire">Entire Place</label><br>
-                    <input type="checkbox" id="private" name="private" value="Private">
-                    <label for="entire">Private Room</label><br>
-                    <input type="checkbox" id="shared" name="shared" value="Shared">
-                    <label for="shared">Shared Room</label>
-
-                    <strong class="d-block mt-2 mb-1">Size</strong>
-                    <input type="checkbox" id="entire" name="entire" value="Entire">
-                    <label for="entire">Entire Place</label><br>
-                    <input type="checkbox" id="private" name="private" value="Private">
-                    <label for="entire">Private Room</label><br>
-                    <input type="checkbox" id="shared" name="shared" value="Shared">
-                    <label for="shared">Shared Room</label>
+            <div class="search-main-inner limited-width d-md-flex">
+                <aside class="search-filters pb-3 py-md-3 container-fluid px-3 px-sm-5 px-md-3 border-bottom border-secondary border-md-0">
+                    <div class="search-filters-inner row align-items-center justify-content-around justify-content-md-start">
+                        <div class="col-6 col-sm-5 col-md-auto pl-md-0">
+                            <input type="checkbox" id="rent" name="rent" value="Rent">
+                            <label class="mr-3" for="rent"> Rent</label><br class="d-block d-md-none">
+                            <input type="checkbox" id="own" name="own" value="Ownership">
+                            <label for="own">Ownership</label>
+                        </div>
+                        
+                        <div class="col-6 col-sm-5 col-md-auto pl-md-0">
+                            <strong class="d-block mt-2 mb-1">Type</strong>
+                            <input type="checkbox" id="entire" name="entire" value="Entire">
+                            <label for="entire">Entire Place</label><br>
+                            <input type="checkbox" id="private" name="private" value="Private">
+                            <label for="entire">Private Room</label><br>
+                            <input type="checkbox" id="shared" name="shared" value="Shared">
+                            <label for="shared">Shared Room</label>
+                        </div>
+    
+                        <div class="col-6 col-sm-5 col-md-auto pl-md-0">
+                            <strong class="d-block mt-2 mb-1">Size</strong>
+                            <input type="checkbox" id="entire" name="entire" value="Entire">
+                            <label for="entire">Entire Place</label><br>
+                            <input type="checkbox" id="private" name="private" value="Private">
+                            <label for="entire">Private Room</label><br>
+                            <input type="checkbox" id="shared" name="shared" value="Shared">
+                            <label for="shared">Shared Room</label>
+                        </div>
+    
+                        <div class="col-6 col-sm-5 col-md-auto pl-md-0">
+                            <strong class="d-block mt-2 mb-1">Size</strong>
+                            <input type="checkbox" id="entire" name="entire" value="Entire">
+                            <label for="entire">Entire Place</label><br>
+                            <input type="checkbox" id="private" name="private" value="Private">
+                            <label for="entire">Private Room</label><br>
+                            <input type="checkbox" id="shared" name="shared" value="Shared">
+                            <label for="shared">Shared Room</label>
+                        </div>
+                    </div>
                 </aside>
 
-                <section class="search-results">
-                    <div class="search-info p-3">
+                <section class="search-results container-fluid">
+                    <div class="search-info row p-3">
                         <span><strong>138</strong> Results for <strong>"Flat"</strong> Search at <strong>San Francisco</strong> in Category <strong>Real Estate</strong></span>
                     </div>
 
-                    <div class="search-result d-flex p-3 mb-2">
-                        <div class="search-result-img-container position-relative">
-                            <img src="./imgs/sample-img.jpg" alt="">
+                    <div class="search-result row p-3 mb-2">
+                        <div class="search-result-img-container position-relative col-8 col-sm-3 col-lg-4 col-xl-3 px-0">
+                            <img src="./imgs/furniture-1.jpg" alt="">
                             <div class="search-result-img-contollers">
                                 <a class="search-result-img-contoller d-inline-block" href="#"><i class="highlight-text px-3 fa fa-chevron-left" aria-hidden="true"></i></a>
                                 <a class="search-result-img-contoller d-inline-block" href="#"><i class="highlight-text px-3 fa fa-chevron-right" aria-hidden="true"></i></a>
                             </div>
                         </div>
-                        <div class="search-result-text p-3 pl-4 position-relative">
+                        <div class="search-result-text col p-3 pl-4 position-relative">
                             <h3 class="mb-0">Some title Lorem ipsum dolor sit, amet consectetur </h3>
                             <span class="highlight-text font-weight-bold">200 M, rent</span>
-                            <p class="mb-0 my-3 text-secondary">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet aperiam magnam, maxime tempora voluptate eligendi
+                            <p class="mb-0 mb-5 my-lg-3 text-secondary">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet aperiam magnam, maxime tempora voluptate eligendi
                             similique animi ipsam facere, obcaecati voluptatem cum. Excepturi maiores in cupiditate ducimus aut cum ratione!</p>
-                            <span class="location d-block mb-3 text-secondary"><strong class="text-main">Location: </strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
-                            <span class="date text-secondary">23 Nov, 2020</span>
+                            <span class="location d-none d-lg-block mb-3 text-secondary"><strong class="text-main">Location: </strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+                            <span class="date text-secondary d-none d-lg-block">23 Nov, 2020</span>
                             <button class="button-add"><i class="text-secondary fa fa-plus" aria-hidden="true"></i></button>
                             <div class="price-tag-with-cta">
                                 <a href="#"><span class="cta-call d-inline-block px-3 py-2 mr-2 rounded">Give a Call</span></a>
@@ -121,9 +133,9 @@
                         </div>
                     </div>
 
-                    <div class="search-result d-flex p-3 mb-2">
-                        <div class="search-result-img-container position-relative">
-                            <img src="./imgs/sample-img.jpg" alt="">
+                    <div class="search-result row p-3 mb-2">
+                        <div class="search-result-img-container position-relative col-8 col-sm-3 col-lg-4 col-xl-3 px-0">
+                            <img src="./imgs/furniture-1.jpg" alt="">
                             <div class="search-result-img-contollers">
                                 <a class="search-result-img-contoller d-inline-block" href="#"><i
                                         class="highlight-text px-3 fa fa-chevron-left" aria-hidden="true"></i></a>
@@ -131,16 +143,16 @@
                                         class="highlight-text px-3 fa fa-chevron-right" aria-hidden="true"></i></a>
                             </div>
                         </div>
-                        <div class="search-result-text p-3 pl-4 position-relative">
+                        <div class="search-result-text col p-3 pl-4 position-relative">
                             <h3 class="mb-0">Some title Lorem ipsum dolor sit, amet consectetur </h3>
                             <span class="highlight-text font-weight-bold">200 M, rent</span>
-                            <p class="mb-0 my-3 text-secondary">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet aperiam
-                                magnam, maxime tempora voluptate eligendi
+                            <p class="mb-0 mb-5 my-lg-3 text-secondary">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet
+                                aperiam magnam, maxime tempora voluptate eligendi
                                 similique animi ipsam facere, obcaecati voluptatem cum. Excepturi maiores in cupiditate ducimus aut cum
                                 ratione!</p>
-                            <span class="location d-block mb-3 text-secondary"><strong class="text-main">Location: </strong>Lorem ipsum
-                                dolor sit amet, consectetur adipisicing elit.</span>
-                            <span class="date text-secondary">23 Nov, 2020</span>
+                            <span class="location d-none d-lg-block mb-3 text-secondary"><strong class="text-main">Location: </strong>Lorem
+                                ipsum dolor sit amet, consectetur adipisicing elit.</span>
+                            <span class="date text-secondary d-none d-lg-block">23 Nov, 2020</span>
                             <button class="button-add"><i class="text-secondary fa fa-plus" aria-hidden="true"></i></button>
                             <div class="price-tag-with-cta">
                                 <a href="#"><span class="cta-call d-inline-block px-3 py-2 mr-2 rounded">Give a Call</span></a>
@@ -149,9 +161,9 @@
                         </div>
                     </div>
 
-                    <div class="search-result d-flex p-3 mb-2">
-                        <div class="search-result-img-container position-relative">
-                            <img src="./imgs/sample-img.jpg" alt="">
+                    <div class="search-result row p-3 mb-2">
+                        <div class="search-result-img-container position-relative col-8 col-sm-3 col-lg-4 col-xl-3 px-0">
+                            <img src="./imgs/furniture-1.jpg" alt="">
                             <div class="search-result-img-contollers">
                                 <a class="search-result-img-contoller d-inline-block" href="#"><i
                                         class="highlight-text px-3 fa fa-chevron-left" aria-hidden="true"></i></a>
@@ -159,16 +171,16 @@
                                         class="highlight-text px-3 fa fa-chevron-right" aria-hidden="true"></i></a>
                             </div>
                         </div>
-                        <div class="search-result-text p-3 pl-4 position-relative">
+                        <div class="search-result-text col p-3 pl-4 position-relative">
                             <h3 class="mb-0">Some title Lorem ipsum dolor sit, amet consectetur </h3>
                             <span class="highlight-text font-weight-bold">200 M, rent</span>
-                            <p class="mb-0 my-3 text-secondary">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet aperiam
-                                magnam, maxime tempora voluptate eligendi
+                            <p class="mb-0 mb-5 my-lg-3 text-secondary">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet
+                                aperiam magnam, maxime tempora voluptate eligendi
                                 similique animi ipsam facere, obcaecati voluptatem cum. Excepturi maiores in cupiditate ducimus aut cum
                                 ratione!</p>
-                            <span class="location d-block mb-3 text-secondary"><strong class="text-main">Location: </strong>Lorem ipsum
-                                dolor sit amet, consectetur adipisicing elit.</span>
-                            <span class="date text-secondary">23 Nov, 2020</span>
+                            <span class="location d-none d-lg-block mb-3 text-secondary"><strong class="text-main">Location: </strong>Lorem
+                                ipsum dolor sit amet, consectetur adipisicing elit.</span>
+                            <span class="date text-secondary d-none d-lg-block">23 Nov, 2020</span>
                             <button class="button-add"><i class="text-secondary fa fa-plus" aria-hidden="true"></i></button>
                             <div class="price-tag-with-cta">
                                 <a href="#"><span class="cta-call d-inline-block px-3 py-2 mr-2 rounded">Give a Call</span></a>
@@ -177,9 +189,9 @@
                         </div>
                     </div>
 
-                    <div class="search-result d-flex p-3 mb-2">
-                        <div class="search-result-img-container position-relative">
-                            <img src="./imgs/sample-img.jpg" alt="">
+                    <div class="search-result row p-3 mb-2">
+                        <div class="search-result-img-container position-relative col-8 col-sm-3 col-lg-4 col-xl-3 px-0">
+                            <img src="./imgs/furniture-1.jpg" alt="">
                             <div class="search-result-img-contollers">
                                 <a class="search-result-img-contoller d-inline-block" href="#"><i
                                         class="highlight-text px-3 fa fa-chevron-left" aria-hidden="true"></i></a>
@@ -187,16 +199,16 @@
                                         class="highlight-text px-3 fa fa-chevron-right" aria-hidden="true"></i></a>
                             </div>
                         </div>
-                        <div class="search-result-text p-3 pl-4 position-relative">
+                        <div class="search-result-text col p-3 pl-4 position-relative">
                             <h3 class="mb-0">Some title Lorem ipsum dolor sit, amet consectetur </h3>
                             <span class="highlight-text font-weight-bold">200 M, rent</span>
-                            <p class="mb-0 my-3 text-secondary">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet aperiam
-                                magnam, maxime tempora voluptate eligendi
+                            <p class="mb-0 mb-5 my-lg-3 text-secondary">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet
+                                aperiam magnam, maxime tempora voluptate eligendi
                                 similique animi ipsam facere, obcaecati voluptatem cum. Excepturi maiores in cupiditate ducimus aut cum
                                 ratione!</p>
-                            <span class="location d-block mb-3 text-secondary"><strong class="text-main">Location: </strong>Lorem ipsum
-                                dolor sit amet, consectetur adipisicing elit.</span>
-                            <span class="date text-secondary">23 Nov, 2020</span>
+                            <span class="location d-none d-lg-block mb-3 text-secondary"><strong class="text-main">Location: </strong>Lorem
+                                ipsum dolor sit amet, consectetur adipisicing elit.</span>
+                            <span class="date text-secondary d-none d-lg-block">23 Nov, 2020</span>
                             <button class="button-add"><i class="text-secondary fa fa-plus" aria-hidden="true"></i></button>
                             <div class="price-tag-with-cta">
                                 <a href="#"><span class="cta-call d-inline-block px-3 py-2 mr-2 rounded">Give a Call</span></a>
@@ -206,7 +218,7 @@
                     </div>
 
                     <div class="search-result-page-contollers d-flex justify-content-center m-3">
-                        <a class="d-inline-block d-flex align-items-center justify-content-center mx-1 active" href="#">1</a>
+                        <a class="d-inline-block d-flex align-items-center justify-content-center mx-1 active text-white" href="#">1</a>
                         <a class="d-inline-block d-flex align-items-center justify-content-center mx-1" href="#">2</a>
                         <a class="d-inline-block d-flex align-items-center justify-content-center mx-1" href="#">3</a>
                         <a class="d-inline-block d-flex align-items-center justify-content-center mx-1" href="#">4</a>
@@ -217,6 +229,63 @@
             </div>
         </main>
 
+        <footer class="main-footer container-fluid limited-width">
+            <div class="row justify-content-around justify-content-lg-between p-3">
+                <div class="col-md-3 d-none d-md-inline-block">
+                    <img class="col-md-8 d-block m-auto" src="./imgs/logo.png" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident quis ex recusandae dolore sed
+                        consequuntur, vero
+                        doloribus, numquam accusantium, unde at odit nam quos. Eius, maiores? Quam eum dolorem deserunt!</p>
+                </div>
+
+                <nav class="footer-category-nav col-7 col-md-4 col-lg-3">
+                    <h3>CATEGORIES</h3>
+                    <ul class="footer-category-nav-list p-0">
+                        <li class="pb-2"><a class="secondary-text" href="./search-results.html">Category 1</a></li>
+                        <li class="pb-2"><a class="secondary-text" href="./search-results.html">Category 2</a></li>
+                        <li class="pb-2"><a class="secondary-text" href="./search-results.html">Category 3</a></li>
+                        <li class="pb-2"><a class="secondary-text" href="./search-results.html">Category 4</a></li>
+                        <li class="pb-2"><a class="secondary-text" href="./search-results.html">Category 5</a></li>
+                        <li class="pb-2"><a class="secondary-text" href="./search-results.html">Category 6</a></li>
+                        <li class="pb-2"><a class="secondary-text" href="./search-results.html">Category 7</a></li>
+                        <li class="pb-2"><a class="secondary-text" href="./search-results.html">Category 1</a></li>
+                        <li class="pb-2"><a class="secondary-text" href="./search-results.html">Category 2</a></li>
+                        <li class="pb-2"><a class="secondary-text" href="./search-results.html">Category 3</a></li>
+                        <li class="pb-2"><a class="secondary-text" href="./search-results.html">Category 4</a></li>
+                        <li class="pb-2"><a class="secondary-text" href="./search-results.html">Category 5</a></li>
+                        <li class="pb-2"><a class="secondary-text" href="./search-results.html">Category 6</a></li>
+                        <li class="pb-2"><a class="secondary-text" href="./search-results.html">Category 7</a></li>
+                    </ul>
+                </nav>
+
+                <nav class="footer-website-nav col-5 col-md-2">
+                    <h3>NAVIGATION</h3>
+                    <ul class="footer-website-nav-list p-0">
+                        <li class="pb-2"><a class="secondary-text" href="./index.html">Home</a></li>
+                        <li class="pb-2"><a class="secondary-text" href="#">Sign In</a></li>
+                        <li class="pb-2"><a class="secondary-text" href="#">Sign Up</a></li>
+                        <li class="pb-2"><a class="secondary-text" href="#">Terms & Conditions</a></li>
+                        <li class="pb-2"><a class="secondary-text" href="#">FAQ</a></li>
+                        <li class="pb-2"><a class="secondary-text" href="#">Help</a></li>
+                    </ul>
+                </nav>
+
+                <div class="view-options align-self-center d-none d-lg-inline-block">
+                    <div class="regions my-3">
+                        <span class="highlight-text d-inline-block">Region</span>
+                        <button class="btn border-secondary px-3">U.S.</button>
+                    </div>
+                    <div class="langs my-3">
+                        <span class="highlight-text d-inline-block">LANGUAGE</span>
+                        <button class="btn border-secondary px-3">English</button>
+                    </div>
+                    <div class="currencies my-3">
+                        <span class="highlight-text d-inline-block">CURRENCY</span>
+                        <button class="btn border-secondary px-3">USD</button>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"

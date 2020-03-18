@@ -13,22 +13,24 @@
 </head>
 <body>
     <div class="wrapper">
-        <nav class="navbar py-1 px-lg-5">
-            <div class="navbar-left d-flex align-items-center pl-lx-5">
-                <a class="navbar-brand p-0" href="#"><img src="./imgs/logo.png" alt="Logo"></a>
-                <ul class="nav d-none d-sm-flex">
-                    <li class="nav-item"><a class="nav-link active highlight-text" href="#"><i class="pr-2 fas fa-home"></i>HOME</a></li>
-                    <li class="nav-item"><a class="nav-link secondary-text" href="#"><i class="pr-2 fas fa-th"></i>COLLECTIONS</a></li>
-                    <li class="nav-item"><a class="nav-link secondary-text" href="#"><i class="pr-2 fas fa-shopping-basket"></i>PURCHASE LIST</a></li>
-                    <li class="nav-item  d-none d-md-flex"><a class="nav-link highlight-bg posting-link ml-4" href="#">POST AN AD</a></li>
-                </ul>
+        <nav class="navbar py-1">
+            <div class="navbar-inner limited-width px-2">
+                <div class="navbar-left d-flex align-items-center">
+                    <a class="navbar-brand p-0" href="#"><img src="./imgs/logo.png" alt="Logo"></a>
+                    <ul class="nav d-none d-sm-flex">
+                        <li class="nav-item"><a class="nav-link active highlight-text" href="#"><i class="pr-2 fas fa-home"></i>HOME</a></li>
+                        <li class="nav-item"><a class="nav-link secondary-text" href="./search-results.html"><i class="pr-2 fas fa-th"></i>COLLECTIONS</a></li>
+                        <li class="nav-item"><a class="nav-link secondary-text" href="#"><i class="pr-2 fas fa-shopping-basket"></i>PURCHASE LIST</a></li>
+                        <li class="nav-item  d-none d-md-flex ml-4"><a class="nav-link highlight-bg posting-link" href="#">POST AN AD</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-right d-none d-lg-inline-block">
+                    <a class="pl-2 secondary-text" href="#"><i class="fas fa-envelope"></i></a>
+                    <a class="pl-2 text-white" href="#">Nicolas Horn</a>
+                    <a class="pl-2 text-white" href="#"><img class="rounded-circle" src="./imgs/profile-photo.jpg" alt="profile image"></a>
+                </div>
+                <a class="menu-button d-inline-block d-lg-none" href="#"><i class="highlight-text fas fa-bars"></i></a>
             </div>
-            <div class="navbar-right d-none d-lg-inline-block pr-lx-5">
-                <a class="pl-2 secondary-text" href="#"><i class="fas fa-envelope"></i></a>
-                <a class="pl-2 text-white" href="#">Nicolas Horn</a>
-                <a class="pl-2 text-white" href="#"><img class="rounded-circle" src="./imgs/profile-photo.jpg" alt="profile image"></a>
-            </div>
-            <a class="menu-button d-inline-block d-lg-none" href="#"><i class="highlight-text fas fa-bars"></i></a>
         </nav>
 
         <header class="main-header pb-md-5 pt-md-2 container-fluid">
@@ -36,7 +38,7 @@
                 <h1>SHOPPING SHOP</h1>
                 <span>Buying and Selling Couldn't be Simpler than this!</span>    
             </div>
-            <form class="header-form row justify-content-center d-none d-md-block" action="" id="search-form">
+            <form class="header-form row justify-content-center d-none d-md-block limited-width" action="" id="search-form">
                 <select class="col-md-2 mr-1" id="department" name="department" form="search-form">
                     <option value="all">All Department</option>
                     <option value="us">US</option>
@@ -81,7 +83,7 @@
                     <div class="category-header d-flex justify-content-between align-items-center p-3 border-bottom">
                         <div class="category-header-left d-flex justify-content-center align-items-end">
                             <i class="secondary-text fas fa-desktop"></i>
-                            <a class="d-flex align-self-end" href="#">
+                            <a class="d-flex align-self-end" href="./search-results.html">
                                 <h3 class="main-text mb-0 pl-3 pr-2 d-inline font-weight-bold">Electronics</h3>
                             </a>
                             <span class="secondary-text">(subcategory, subcategory, subcategory, subcategory)</span>
@@ -217,34 +219,35 @@
             <div class="row justify-content-around justify-content-lg-between p-3">
                 <div class="col-md-3 d-none d-md-inline-block">
                     <img class="col-md-8 d-block m-auto" src="./imgs/logo.png" alt="">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident quis ex recusandae dolore sed consequuntur, vero
-                    doloribus, numquam accusantium, unde at odit nam quos. Eius, maiores? Quam eum dolorem deserunt!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident quis ex recusandae dolore sed
+                        consequuntur, vero
+                        doloribus, numquam accusantium, unde at odit nam quos. Eius, maiores? Quam eum dolorem deserunt!</p>
                 </div>
-    
-                <nav class="footer-category-nav col-6 col-md-4 col-lg-3">
+        
+                <nav class="footer-category-nav col-7 col-md-4 col-lg-3">
                     <h3>CATEGORIES</h3>
                     <ul class="footer-category-nav-list p-0">
-                        <li class="pb-2"><a class="secondary-text" href="#">Category 1</a></li>
-                        <li class="pb-2"><a class="secondary-text" href="#">Category 2</a></li>
-                        <li class="pb-2"><a class="secondary-text" href="#">Category 3</a></li>
-                        <li class="pb-2"><a class="secondary-text" href="#">Category 4</a></li>
-                        <li class="pb-2"><a class="secondary-text" href="#">Category 5</a></li>
-                        <li class="pb-2"><a class="secondary-text" href="#">Category 6</a></li>
-                        <li class="pb-2"><a class="secondary-text" href="#">Category 7</a></li>
-                        <li class="pb-2"><a class="secondary-text" href="#">Category 1</a></li>
-                        <li class="pb-2"><a class="secondary-text" href="#">Category 2</a></li>
-                        <li class="pb-2"><a class="secondary-text" href="#">Category 3</a></li>
-                        <li class="pb-2"><a class="secondary-text" href="#">Category 4</a></li>
-                        <li class="pb-2"><a class="secondary-text" href="#">Category 5</a></li>
-                        <li class="pb-2"><a class="secondary-text" href="#">Category 6</a></li>
-                        <li class="pb-2"><a class="secondary-text" href="#">Category 7</a></li>
+                        <li class="pb-2"><a class="secondary-text" href="./search-results.html">Category 1</a></li>
+                        <li class="pb-2"><a class="secondary-text" href="./search-results.html">Category 2</a></li>
+                        <li class="pb-2"><a class="secondary-text" href="./search-results.html">Category 3</a></li>
+                        <li class="pb-2"><a class="secondary-text" href="./search-results.html">Category 4</a></li>
+                        <li class="pb-2"><a class="secondary-text" href="./search-results.html">Category 5</a></li>
+                        <li class="pb-2"><a class="secondary-text" href="./search-results.html">Category 6</a></li>
+                        <li class="pb-2"><a class="secondary-text" href="./search-results.html">Category 7</a></li>
+                        <li class="pb-2"><a class="secondary-text" href="./search-results.html">Category 1</a></li>
+                        <li class="pb-2"><a class="secondary-text" href="./search-results.html">Category 2</a></li>
+                        <li class="pb-2"><a class="secondary-text" href="./search-results.html">Category 3</a></li>
+                        <li class="pb-2"><a class="secondary-text" href="./search-results.html">Category 4</a></li>
+                        <li class="pb-2"><a class="secondary-text" href="./search-results.html">Category 5</a></li>
+                        <li class="pb-2"><a class="secondary-text" href="./search-results.html">Category 6</a></li>
+                        <li class="pb-2"><a class="secondary-text" href="./search-results.html">Category 7</a></li>
                     </ul>
                 </nav>
-
-                <nav class="footer-website-nav col-3 col-md-2">
+        
+                <nav class="footer-website-nav col-5 col-md-2">
                     <h3>NAVIGATION</h3>
                     <ul class="footer-website-nav-list p-0">
-                        <li class="pb-2"><a class="secondary-text" href="#">Home</a></li>
+                        <li class="pb-2"><a class="secondary-text" href="./index.html">Home</a></li>
                         <li class="pb-2"><a class="secondary-text" href="#">Sign In</a></li>
                         <li class="pb-2"><a class="secondary-text" href="#">Sign Up</a></li>
                         <li class="pb-2"><a class="secondary-text" href="#">Terms & Conditions</a></li>
@@ -252,7 +255,7 @@
                         <li class="pb-2"><a class="secondary-text" href="#">Help</a></li>
                     </ul>
                 </nav>
-
+        
                 <div class="view-options align-self-center d-none d-lg-inline-block">
                     <div class="regions my-3">
                         <span class="highlight-text d-inline-block">Region</span>
@@ -266,11 +269,8 @@
                         <span class="highlight-text d-inline-block">CURRENCY</span>
                         <button class="btn border-secondary px-3">USD</button>
                     </div>
-                    
                 </div>
-
             </div>
-
         </footer>
     </div>
 
