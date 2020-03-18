@@ -167,6 +167,10 @@ a:hover {
   font-size: 14px;
 }
 
+.category-header .view-all {
+  min-width: 70px;
+}
+
 .category-content-scrolling-wrapper {
   overflow-x: scroll;
   overflow-y: hidden;
