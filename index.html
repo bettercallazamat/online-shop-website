@@ -34,30 +34,32 @@
         </nav>
 
         <header class="main-header pb-md-5 pt-md-2 container-fluid">
-            <div class="header-title text-white py-5 d-block">
-                <h1 class="text-white">SELECTIFF FURNITURE</h1>
-                <span>Buying and Selling Couldn't be Simpler than this!</span>    
+            <div class="main-header-inner limited-width">
+                <div class="header-title text-white py-5 d-block row">
+                    <h1 class="text-white">SELECTIFF FURNITURE</h1>
+                    <span>Buying and Selling Couldn't be Simpler than this!</span>    
+                </div>
+                <form class="header-form row mx-5 pb-4 justify-content-center" action="/" id="search-form">
+                    <select class="col-md-2 mr-md-1 mb-1 mb-md-0" id="department" name="department" form="search-form">
+                        <option value="all">All Departments</option>
+                        <option value="us">Furniture</option>
+                        <option value="asia">Mattresses</option>
+                        <option value="europe">Baby + Kids</option>
+                        <option value="europe">Outdoor</option>
+                        <option value="europe">Bedding</option>
+                    </select>
+                    <input class="col-md-3 mr-md-1 mb-1 mb-md-0" type="search" name="search" id="search"
+                        placeholder="What do you search for?">
+                    <input class="col-md-3 mr-md-1 mr-md-3 mb-1 mb-md-0" list="regions" name="regions" placeholder="Choose your region">
+                    <datalist id="regions">
+                        <option value="All Countries">
+                        <option value="US">
+                        <option value="Asia">
+                        <option value="Europe">
+                    </datalist>
+                    <input class="col col-md-1" type="submit" value="Search">
+                </form>
             </div>
-            <form class="header-form row justify-content-center limited-width mx-5 pb-4" action="/" id="search-form">
-                <select class="col-md-2 mr-md-1 mb-1 mb-md-0" id="department" name="department" form="search-form">
-                    <option value="all">All Departments</option>
-                    <option value="us">Furniture</option>
-                    <option value="asia">Mattresses</option>
-                    <option value="europe">Baby + Kids</option>
-                    <option value="europe">Outdoor</option>
-                    <option value="europe">Bedding</option>
-                </select>
-                <input class="col-md-3 mr-md-1 mb-1 mb-md-0" type="search" name="search" id="search"
-                    placeholder="What do you search for?">
-                <input class="col-md-3 mr-md-1 mr-md-3 mb-1 mb-md-0" list="regions" name="regions" placeholder="Choose your region">
-                <datalist id="regions">
-                    <option value="All Countries">
-                    <option value="US">
-                    <option value="Asia">
-                    <option value="Europe">
-                </datalist>
-                <input class="col col-md-1" type="submit" value="Search">
-            </form>
         </header>
 
         <section class="hot-ads container-fluid limited-width px-5">

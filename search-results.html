@@ -39,27 +39,29 @@
         </nav>
         
         <header class="main-header py-4 container-fluid">
-            <div class="header-title main-header-search text-white text-center row justify-content-center mb-3 d-block">
-                <h2 class="title mb-0 text-white">SELECTIFF FURNITURE</h2>
-                <span class="subtitle">Buying and Selling Couldn't be Simpler than this!</span>
+            <div class="main-header-inner limited-width">
+                <div class="header-title main-header-search text-white text-center row justify-content-center mb-3 d-block">
+                    <h2 class="title mb-0 text-white">SELECTIFF FURNITURE</h2>
+                    <span class="subtitle">Buying and Selling Couldn't be Simpler than this!</span>
+                </div>
+                <form class="header-form row justify-content-center mx-5" action="/" id="search-form">
+                    <select class="col-md-2 mr-md-1 mb-1 mb-md-0" id="department" name="department" form="search-form">
+                        <option value="all">All Department</option>
+                        <option value="us">US</option>
+                        <option value="asia">Asia</option>
+                        <option value="europe">Europe</option>
+                    </select>
+                    <input class="col-md-3 mr-md-1 mb-1 mb-md-0" type="search" name="search" id="search" placeholder="What do you search for?">
+                    <input class="col-md-3 mr-md-1 mr-md-3 mb-1 mb-md-0" list="regions" name="regions" placeholder="Choose your region">
+                    <datalist id="regions">
+                        <option value="All Countries">
+                        <option value="US">
+                        <option value="Asia">
+                        <option value="Europe">
+                    </datalist>
+                    <input class="col col-md-1" type="submit" value="Search">
+                </form>
             </div>
-            <form class="header-form row justify-content-center limited-width mx-5" action="/" id="search-form">
-                <select class="col-md-2 mr-md-1 mb-1 mb-md-0" id="department" name="department" form="search-form">
-                    <option value="all">All Department</option>
-                    <option value="us">US</option>
-                    <option value="asia">Asia</option>
-                    <option value="europe">Europe</option>
-                </select>
-                <input class="col-md-3 mr-md-1 mb-1 mb-md-0" type="search" name="search" id="search" placeholder="What do you search for?">
-                <input class="col-md-3 mr-md-1 mr-md-3 mb-1 mb-md-0" list="regions" name="regions" placeholder="Choose your region">
-                <datalist id="regions">
-                    <option value="All Countries">
-                    <option value="US">
-                    <option value="Asia">
-                    <option value="Europe">
-                </datalist>
-                <input class="col col-md-1" type="submit" value="Search">
-            </form>
         </header>
 
         <main class="search-main p-3">
@@ -82,9 +84,7 @@
                             <input type="checkbox" id="bellona" name="bellona" value="bellona">
                             <label for="bellona">Bellona</label><br>
                             <input type="checkbox" id="istikbal" name="istikbal" value="istikbal">
-                            <label for="istikbal">Istikbal</label><br>
-                            <input type="checkbox" id="iberba" name="iberba" value="iberba">
-                            <label for="iberba">Iberba</label>
+                            <label for="istikbal">Istikbal</label>
                         </div>
     
                         <div class="col-6 col-sm-5 col-md-auto pl-md-0">
