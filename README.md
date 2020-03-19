@@ -1,11 +1,12 @@
 # Online Shop for Furniture Store
-I built an 2 page online shop for furniture store:
-- the main page (search page), with a link to the results page
-- the search results page
+I built an 2 page online shop for local furniture store:
+- the main page with categories listed and search feeature, 
+- with a link to the search results page
 
 ## Project features:
-1. Project considers responsiveness on each Bootstrap breakpoint
+1. Project considers responsiveness on each Bootstrap breakpoint (screenshots for breakpoints below)
 2. Most of the styling and position is done using Bootstrap
+3. Categories in main page is with horizontal scroll posibility
 
 ## Built With
 
@@ -14,15 +15,16 @@ I built an 2 page online shop for furniture store:
 - Flexbox
 - Fontawesome
 - Media Queries
+- Font imports
 
 ## Screenshot
 
-![Screenshot](imgs/screenshot-1.png)
 ![Screenshot](imgs/screenshot-2.png)
+![Screenshot](imgs/screenshot-1.png)
 
 ## Live Demo
 
-[Check it out!](https://newsweek-bootstrap.netlify.com/)
+[Check it out!](https://online-shop-website.netlify.com/)
 
 ## Author
 
