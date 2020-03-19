@@ -1,5 +1,5 @@
 # Online Shop for Furniture Store
-I built an 2 page online shop for local furniture store:
+I built 2 page online shop for local furniture store:
 - the main page with categories listed and search feeature, 
 - with a link to the search results page
 
