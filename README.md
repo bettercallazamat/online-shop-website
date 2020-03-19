@@ -43,3 +43,6 @@ Feel free to check the [issues page](issues/).
 ## Show your support
 
 Give a ⭐️ if you like this project!
+
+## Acknowledgments
+This project was build based on [design](https://www.behance.net/gallery/24796463/ZATTIX) from behance.com which is designed by the great professional [Mohammed Awad](https://www.behance.net/M_Awad).
