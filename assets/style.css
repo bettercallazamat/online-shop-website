@@ -189,6 +189,26 @@ a:hover {
   width: calc(100% - 100px);
 }
 
+@media only screen and (max-width: 575px) {
+  .hot-ads-option {
+    width: 100%;
+  }
+}
+
+.mobile-carousel {
+  color: #888;
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20px;
+}
+
+.mobile-carousel .active {
+  color: #383838;
+  font-size: 13px;
+}
+
 .categories-wrapper {
   background-color: #f6f6f6;
 }
@@ -339,7 +359,7 @@ a:hover {
 
 /* ==== Search results page ==== */
 
-.main-header h2 {
+.main-header .search-title {
   font-size: 30px;
 }
 

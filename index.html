@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./assets/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
         integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <title>Selectiff furniture store</title>
@@ -16,7 +16,7 @@
         <nav class="navbar py-1">
             <div class="navbar-inner limited-width px-2">
                 <div class="navbar-left d-flex align-items-center">
-                    <a class="navbar-brand p-0" href="#"><img src="./imgs/logo-sign.png" alt="Logo"></a>
+                    <a class="navbar-brand p-0" href="#"><img src="./assets/imgs/logo-sign.png" alt="Logo"></a>
                     <ul class="nav d-none d-sm-flex">
                         <li class="nav-item"><a class="nav-link active highlight-text" href="#"><i class="pr-2 fas fa-home"></i>HOME</a></li>
                         <li class="nav-item"><a class="nav-link secondary-text" href="./search-results.html"><i class="pr-2 fas fa-th"></i>COLLECTIONS</a></li>
@@ -27,7 +27,7 @@
                 <div class="navbar-right d-none d-lg-inline-block">
                     <a class="pl-2 secondary-text" href="#"><i class="fas fa-envelope"></i></a>
                     <a class="pl-2 text-white" href="#">Nicolas Horn</a>
-                    <a class="pl-2 text-white" href="#"><img class="rounded-circle" src="./imgs/profile-photo.jpg" alt="profile image"></a>
+                    <a class="pl-2 text-white" href="#"><img class="rounded-circle" src="./assets/imgs/profile-photo.jpg" alt="profile image"></a>
                 </div>
                 <a class="menu-button d-inline-block d-lg-none" href="#"><i class="highlight-text fas fa-bars"></i></a>
             </div>
@@ -65,9 +65,9 @@
         <section class="hot-ads container-fluid limited-width px-1 px-md-5">
             <h3 class="row secondary-text mb-0 mt-3 pl-3 pl-md-0">HOT ADS</h3>
             <div class="hot-ads-container p-3 pb-4 row d-flex justify-content-center align-items-center">
-                <button class="hot-ads-container-controllers d-flex justify-content-center align-items-center"><i class="fas fa-chevron-left"></i></button>
+                <button class="hot-ads-container-controllers d-none d-sm-flex justify-content-center align-items-center"><i class="fas fa-chevron-left"></i></button>
                 <div class="hot-ads-option d-md-flex align-items-md-center col-md">
-                    <img class="hot-ads-carousel-image col-sm-9 col-md-5 col-lg-3 pl-md-0 mx-sm-5 mx-md-0" src="./imgs/furniture-living-3.jpg" alt="Image">
+                    <img class="hot-ads-carousel-image col-sm-9 col-md-5 col-lg-3 pl-md-0 mx-sm-5 mx-md-0" src="./assets/imgs/furniture-living-3.jpg" alt="Image">
                     <div class="hot-ads-carousel-right col-12 col-md">
                         <h4 class="highlight-text">Accrington 3-Piece Sectional with Chaise</h4>
                         <p>Looking for the perfect blend of decadent comfort and contemporary flair? Feast your eyes on the Accrington 2-piece
@@ -75,11 +75,18 @@
                         plush to the touch, the sectional’s earthy brown-tone fabric is the ultimate choice for a richly neutral look.</p>
                         <span><strong>By: </strong>Accrington</span>
                         <span class="d-block mb-3"><strong>Fabric Details: </strong>Body: Polyester (100)%</span>
-                        <button class="btn highlight-bg text-white mb-1 mb-sm-0">850$</button>
+                        <button class="btn highlight-bg text-white mb-0 mb-sm-0">850$</button>
                         <button class="btn highlight-bg text-white">Purchase details</button>
                     </div>
                 </div>
-                <button class="hot-ads-container-controllers d-flex justify-content-center align-items-center"><i class="fas fa-chevron-right"></i></button>
+                <button class="hot-ads-container-controllers d-none d-sm-flex justify-content-center align-items-center"><i class="fas fa-chevron-right"></i></button>
+            </div>
+            <div class="mobile-carousel d-flex d-sm-none pb-4">
+                <i class="px-1 fa fa-circle" aria-hidden="true"></i>
+                <i class="px-1 fa fa-circle" aria-hidden="true"></i>
+                <i class="px-1 fa fa-circle active" aria-hidden="true"></i>
+                <i class="px-1 fa fa-circle" aria-hidden="true"></i>
+                <i class="px-1 fa fa-circle" aria-hidden="true"></i>
             </div>
         </section>
 
@@ -99,7 +106,7 @@
                     <div class="category-content py-3 position-relative">
                         <div class="category-content-scrolling-wrapper">
                             <div class="card d-inline-block mr-2 ml-5">
-                                <img class="card-img-top" src="./imgs/furniture-living-1.jpg" alt="">
+                                <img class="card-img-top" src="./assets/imgs/furniture-living-1.jpg" alt="">
                                 <div class="card-body p-2">
                                     <h5 class="card-title m-0">McCade 3-Piece Reclining Sectional</h5>
                                     <span class="d-block highlight-text mb-2">New Collection</span>
@@ -112,7 +119,7 @@
                             </div>
                 
                             <div class="card d-inline-block mr-2">
-                                <img class="card-img-top" src="./imgs/furniture-living-2.jpg" alt="">
+                                <img class="card-img-top" src="./assets/imgs/furniture-living-2.jpg" alt="">
                                 <div class="card-body p-2">
                                     <h5 class="card-title m-0">Hallenberg 2-Piece Sectional</h5>
                                     <span class="d-block highlight-text mb-2">New Collection</span>
@@ -125,7 +132,7 @@
                             </div>
                 
                             <div class="card d-inline-block mr-2">
-                                <img class="card-img-top" src="./imgs/furniture-living-3.jpg" alt="">
+                                <img class="card-img-top" src="./assets/imgs/furniture-living-3.jpg" alt="">
                                 <div class="card-body p-2">
                                     <h5 class="card-title m-0">Jinllingsly 3-Piece Sectional</h5>
                                     <span class="d-block highlight-text mb-2">Pre-order</span>
@@ -138,7 +145,7 @@
                             </div>
                 
                             <div class="card d-inline-block mr-2">
-                                <img class="card-img-top" src="./imgs/furniture-living-4.jpg" alt="">
+                                <img class="card-img-top" src="./assets/imgs/furniture-living-4.jpg" alt="">
                                 <div class="card-body p-2">
                                     <h5 class="card-title m-0">Larusi 2-Piece Sectional with Chaise</h5>
                                     <span class="d-block highlight-text mb-2">New Collection</span>
@@ -151,7 +158,7 @@
                             </div>
                 
                             <div class="card d-inline-block mr-2">
-                                <img class="card-img-top" src="./imgs/furniture-living-5.jpg" alt="">
+                                <img class="card-img-top" src="./assets/imgs/furniture-living-5.jpg" alt="">
                                 <div class="card-body p-2">
                                     <h5 class="card-title m-0">Bladen 2-Piece Sectional</h5>
                                     <span class="d-block highlight-text mb-2">Previous Collection</span>
@@ -164,7 +171,7 @@
                             </div>
                 
                             <div class="card d-inline-block mr-2">
-                                <img class="card-img-top" src="./imgs/furniture-living-6.jpg" alt="">
+                                <img class="card-img-top" src="./assets/imgs/furniture-living-6.jpg" alt="">
                                 <div class="card-body p-2">
                                     <h5 class="card-title m-0">Jinllingsly 3-Piece Sectional with Chaise</h5>
                                     <span class="d-block highlight-text mb-2">New Collection</span>
@@ -177,7 +184,7 @@
                             </div>
                 
                             <div class="card d-inline-block mr-2">
-                                <img class="card-img-top" src="./imgs/furniture-living-7.jpg" alt="">
+                                <img class="card-img-top" src="./assets/imgs/furniture-living-7.jpg" alt="">
                                 <div class="card-body p-2">
                                     <h5 class="card-title m-0">Accrington 2-Piece Sectional with Chaise</h5>
                                     <span class="d-block highlight-text mb-2">Pre-order</span>
@@ -190,7 +197,7 @@
                             </div>
                 
                             <div class="card d-inline-block mr-2">
-                                <img class="card-img-top" src="./imgs/furniture-living-8.jpg" alt="">
+                                <img class="card-img-top" src="./assets/imgs/furniture-living-8.jpg" alt="">
                                 <div class="card-body p-2">
                                     <h5 class="card-title m-0">Eltmann 3-Piece Sectional with Cuddler</h5>
                                     <span class="d-block highlight-text mb-2">New Collection</span>
@@ -203,7 +210,7 @@
                             </div>
                 
                             <div class="card d-inline-block mr-5">
-                                <img class="card-img-top" src="./imgs/furniture-living-9.jpg" alt="">
+                                <img class="card-img-top" src="./assets/imgs/furniture-living-9.jpg" alt="">
                                 <div class="card-body p-2">
                                     <h5 class="card-title m-0">Eltmann 3-Piece Sectional with Cuddler</h5>
                                     <span class="d-block highlight-text mb-2">Previous Collection</span>
@@ -235,7 +242,7 @@
                     <div class="category-content py-3 position-relative">
                         <div class="category-content-scrolling-wrapper">
                             <div class="card d-inline-block mr-2 ml-5">
-                                <img class="card-img-top" src="./imgs/furniture-bedroom-1.jpg" alt="">
+                                <img class="card-img-top" src="./assets/imgs/furniture-bedroom-1.jpg" alt="">
                                 <div class="card-body p-2">
                                     <h5 class="card-title m-0">Willowton Panel Bed</h5>
                                     <span class="d-block highlight-text mb-2">New Collection</span>
@@ -248,7 +255,7 @@
                             </div>
 
                             <div class="card d-inline-block mr-2">
-                                <img class="card-img-top" src="./imgs/furniture-bedroom-2.jpg" alt="">
+                                <img class="card-img-top" src="./assets/imgs/furniture-bedroom-2.jpg" alt="">
                                 <div class="card-body p-2">
                                     <h5 class="card-title m-0">Starmore Panel Bed</h5>
                                     <span class="d-block highlight-text mb-2">New Collection</span>
@@ -261,7 +268,7 @@
                             </div>
 
                             <div class="card d-inline-block mr-2">
-                                <img class="card-img-top" src="./imgs/furniture-bedroom-3.jpg" alt="">
+                                <img class="card-img-top" src="./assets/imgs/furniture-bedroom-3.jpg" alt="">
                                 <div class="card-body p-2">
                                     <h5 class="card-title m-0">Dolante Upholstered Bed</h5>
                                     <span class="d-block highlight-text mb-2">Pre-order</span>
@@ -274,7 +281,7 @@
                             </div>
 
                             <div class="card d-inline-block mr-2">
-                                <img class="card-img-top" src="./imgs/furniture-bedroom-4.jpg" alt="">
+                                <img class="card-img-top" src="./assets/imgs/furniture-bedroom-4.jpg" alt="">
                                 <div class="card-body p-2">
                                     <h5 class="card-title m-0">Wynnlow Panel Bed</h5>
                                     <span class="d-block highlight-text mb-2">New Collection</span>
@@ -287,7 +294,7 @@
                             </div>
                             
                             <div class="card d-inline-block mr-2">
-                                <img class="card-img-top" src="./imgs/furniture-bedroom-5.jpg" alt="">
+                                <img class="card-img-top" src="./assets/imgs/furniture-bedroom-5.jpg" alt="">
                                 <div class="card-body p-2">
                                     <h5 class="card-title m-0">Alisdair Sleigh Bed</h5>
                                     <span class="d-block highlight-text mb-2">Previous Collection</span>
@@ -300,7 +307,7 @@
                             </div>
                             
                             <div class="card d-inline-block mr-2">
-                                <img class="card-img-top" src="./imgs/furniture-bedroom-6.jpg" alt="">
+                                <img class="card-img-top" src="./assets/imgs/furniture-bedroom-6.jpg" alt="">
                                 <div class="card-body p-2">
                                     <h5 class="card-title m-0">Flynnter Sleigh Bed with 2 Storage Drawers</h5>
                                     <span class="d-block highlight-text mb-2">New Collection</span>
@@ -313,7 +320,7 @@
                             </div>
 
                             <div class="card d-inline-block mr-2">
-                                <img class="card-img-top" src="./imgs/furniture-bedroom-7.jpg" alt="">
+                                <img class="card-img-top" src="./assets/imgs/furniture-bedroom-7.jpg" alt="">
                                 <div class="card-body p-2">
                                     <h5 class="card-title m-0">Cambeck Panel Bed with 2 Storage Drawers</h5>
                                     <span class="d-block highlight-text mb-2">Pre-order</span>
@@ -326,7 +333,7 @@
                             </div>
 
                             <div class="card d-inline-block mr-2">
-                                <img class="card-img-top" src="./imgs/furniture-bedroom-8.jpg" alt="">
+                                <img class="card-img-top" src="./assets/imgs/furniture-bedroom-8.jpg" alt="">
                                 <div class="card-body p-2">
                                     <h5 class="card-title m-0">Bellaby Crossbuck Panel Bed</h5>
                                     <span class="d-block highlight-text mb-2">New Collection</span>
@@ -339,7 +346,7 @@
                             </div>
 
                             <div class="card d-inline-block mr-5">
-                                <img class="card-img-top" src="./imgs/furniture-bedroom-9.jpg" alt="">
+                                <img class="card-img-top" src="./assets/imgs/furniture-bedroom-9.jpg" alt="">
                                 <div class="card-body p-2">
                                     <h5 class="card-title m-0">Culverbach Panel Bed</h5>
                                     <span class="d-block highlight-text mb-2">Previous Collection</span>
@@ -370,7 +377,7 @@
                     <div class="category-content py-3 position-relative">
                         <div class="category-content-scrolling-wrapper">
                             <div class="card d-inline-block mr-2 ml-5">
-                                <img class="card-img-top" src="./imgs/furniture-kitchen-1.jpg" alt="">
+                                <img class="card-img-top" src="./assets/imgs/furniture-kitchen-1.jpg" alt="">
                                 <div class="card-body p-2">
                                     <h5 class="card-title m-0">Moriville 5-Piece Dining Room</h5>
                                     <span class="d-block highlight-text mb-2">New Collection</span>
@@ -383,7 +390,7 @@
                             </div>
                 
                             <div class="card d-inline-block mr-2">
-                                <img class="card-img-top" src="./imgs/furniture-kitchen-2.jpg" alt="">
+                                <img class="card-img-top" src="./assets/imgs/furniture-kitchen-2.jpg" alt="">
                                 <div class="card-body p-2">
                                     <h5 class="card-title m-0">Moriville 6-Piece Counter Height Dining Room</h5>
                                     <span class="d-block highlight-text mb-2">New Collection</span>
@@ -396,7 +403,7 @@
                             </div>
                 
                             <div class="card d-inline-block mr-2">
-                                <img class="card-img-top" src="./imgs/furniture-kitchen-3.jpg" alt="">
+                                <img class="card-img-top" src="./assets/imgs/furniture-kitchen-3.jpg" alt="">
                                 <div class="card-body p-2">
                                     <h5 class="card-title m-0">Bridson Dining Room Table and Chairs with Bench (Set of 6)</h5>
                                     <span class="d-block highlight-text mb-2">Pre-order</span>
@@ -409,7 +416,7 @@
                             </div>
                 
                             <div class="card d-inline-block mr-2">
-                                <img class="card-img-top" src="./imgs/furniture-kitchen-4.jpg" alt="">
+                                <img class="card-img-top" src="./assets/imgs/furniture-kitchen-4.jpg" alt="">
                                 <div class="card-body p-2">
                                     <h5 class="card-title m-0">Skempton Dining Room Table and Chairs (Set of 7)</h5>
                                     <span class="d-block highlight-text mb-2">New Collection</span>
@@ -422,7 +429,7 @@
                             </div>
                 
                             <div class="card d-inline-block mr-2">
-                                <img class="card-img-top" src="./imgs/furniture-kitchen-5.jpg" alt="">
+                                <img class="card-img-top" src="./assets/imgs/furniture-kitchen-5.jpg" alt="">
                                 <div class="card-body p-2">
                                     <h5 class="card-title m-0">Whitesburg 5-Piece Dining Room</h5>
                                     <span class="d-block highlight-text mb-2">Previous Collection</span>
@@ -435,7 +442,7 @@
                             </div>
                 
                             <div class="card d-inline-block mr-2">
-                                <img class="card-img-top" src="./imgs/furniture-kitchen-6.jpg" alt="">
+                                <img class="card-img-top" src="./assets/imgs/furniture-kitchen-6.jpg" alt="">
                                 <div class="card-body p-2">
                                     <h5 class="card-title m-0">Whitesburg 5-Piece Dining Room</h5>
                                     <span class="d-block highlight-text mb-2">New Collection</span>
@@ -448,7 +455,7 @@
                             </div>
                 
                             <div class="card d-inline-block mr-2">
-                                <img class="card-img-top" src="./imgs/furniture-kitchen-7.jpg" alt="">
+                                <img class="card-img-top" src="./assets/imgs/furniture-kitchen-7.jpg" alt="">
                                 <div class="card-body p-2">
                                     <h5 class="card-title m-0">Whitesburg 6-Piece Dining Room</h5>
                                     <span class="d-block highlight-text mb-2">Pre-order</span>
@@ -461,7 +468,7 @@
                             </div>
                 
                             <div class="card d-inline-block mr-2">
-                                <img class="card-img-top" src="./imgs/furniture-kitchen-8.jpg" alt="">
+                                <img class="card-img-top" src="./assets/imgs/furniture-kitchen-8.jpg" alt="">
                                 <div class="card-body p-2">
                                     <h5 class="card-title m-0">Whitesburg 5-Piece Dining Room</h5>
                                     <span class="d-block highlight-text mb-2">New Collection</span>
@@ -474,7 +481,7 @@
                             </div>
                 
                             <div class="card d-inline-block mr-5">
-                                <img class="card-img-top" src="./imgs/furniture-kitchen-9.jpg" alt="">
+                                <img class="card-img-top" src="./assets/imgs/furniture-kitchen-9.jpg" alt="">
                                 <div class="card-body p-2">
                                     <h5 class="card-title m-0">Johnelle 5-Piece Dining Room</h5>
                                     <span class="d-block highlight-text mb-2">Previous Collection</span>
@@ -497,13 +504,13 @@
         <footer class="main-footer container-fluid limited-width">
             <div class="row justify-content-around justify-content-lg-between p-3">
                 <div class="col-md-4 col-lg-3 d-none d-md-inline-block">
-                    <img class="col-md-10 d-block mb-2" src="./imgs/logo-full.png" alt="">
+                    <img class="col-md-10 d-block mb-2" src="./assets/imgs/logo-full.png" alt="">
                     <p>Our passion for designing, manufacturing, and selling furniture has defined us from day one. Now we’re
                         sharing that
                         passion with you – by going on a mission to make the world feel a little more like home.</p>
                 </div>
         
-                <nav class="footer-category-nav col-7 col-md-4 col-lg-3">
+                <nav class="footer-category-nav col-12 col-sm-7 col-md-4 col-lg-3">
                     <h3>CATEGORIES</h3>
                     <ul class="footer-category-nav-list p-0">
                         <li class="pb-2"><a class="secondary-text" href="./search-results.html">Sectionals</a></li>
@@ -523,7 +530,7 @@
                     </ul>
                 </nav>
         
-                <nav class="footer-website-nav col-5 col-md-3 col-lg-2">
+                <nav class="footer-website-nav col-12 col-sm-5 col-md-3 col-lg-2">
                     <h3>NAVIGATION</h3>
                     <ul class="footer-website-nav-list p-0">
                         <li class="pb-2"><a class="secondary-text" href="./index.html">Home</a></li>
