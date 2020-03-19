@@ -1,5 +1,36 @@
+@font-face {
+  font-family: "Gotham";
+  src: url("./fonts/Gotham-Bold.otf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Gotham Rounded";
+  src: url("./fonts/Gotham-Rounded-Light.otf");
+  font-weight: lighter;
+}
+
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("./fonts/Helvetica-Neue-Medium.ttf");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("./fonts/Helvetica-Neue-Bold.ttf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("./fonts/Helvetica-Neue-Light.ttf");
+  font-weight: lighter;
+}
+
 body {
   color: #888;
+  font-family: "Helvetica Neue", sans-serif;
 }
 
 h1,
@@ -9,6 +40,18 @@ h4,
 h5,
 h6 {
   color: #383838;
+}
+
+h1,
+h2,
+h4 {
+  font-family: "Gotham", Arial, sans-serif;
+}
+
+h5,
+h3 {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-weight: bold;
 }
 
 .limited-width {
@@ -232,6 +275,10 @@ a:hover {
   font-size: 13px;
 }
 
+.card-body span:first-of-type {
+  font-weight: bold;
+}
+
 .card-bottom a {
   width: 30px;
   height: 30px;
@@ -410,6 +457,7 @@ div.search-result:hover {
   position: absolute;
   bottom: 0;
   right: 16px;
+  font-weight: bold;
 }
 
 .price-tag,
