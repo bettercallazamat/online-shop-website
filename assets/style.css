@@ -217,6 +217,18 @@ a:hover {
   width: 100%;
 }
 
+.category-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.category-header-left {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
 .category-header i {
   font-size: 25px;
 }
@@ -297,6 +309,16 @@ a:hover {
 
 .card-body span:first-of-type {
   font-weight: bold;
+}
+
+.card-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-bottom a {
+  display: flex;
+  align-items: center;
 }
 
 .card-bottom a {
@@ -492,7 +514,15 @@ div.search-result:hover {
   color: #f6f6f6;
 }
 
+.search-result-page-contollers {
+  display: flex;
+  justify-content: center;
+}
+
 .search-results .search-result-page-contollers a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: 1px solid #888;
   border-radius: 5px;
   color: #888;
