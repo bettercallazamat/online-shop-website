@@ -1,12 +1,12 @@
 # Online Shop for Furniture Store
-I built 2 page online shop for local furniture store:
-- the main page with categories listed and search feeature, 
-- with a link to the search results page
+I built a 2-page online shop for local furniture store:
+- the main page with categories listed with search feeature, 
+- that leads to the search results page
 
 ## Project features:
-1. Project considers responsiveness on each Bootstrap breakpoint (screenshots for breakpoints below)
-2. Most of the styling and position is done using Bootstrap
-3. Categories in main page is with horizontal scroll posibility
+1. Project is considering responsiveness on each Bootstrap breakpoint (screenshots for breakpoints below)
+2. Most of the styling and positioning is done using Bootstrap
+3. Categories in the main page has horizontal scroll posibility
 
 ## Built With
 
