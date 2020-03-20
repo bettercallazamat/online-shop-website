@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <title>Selectiff furniture store</title>
+</head>
+<body>
+    <div class="wrapper">
+        <nav class="navbar py-1">
+            <div class="navbar-inner limited-width px-2">
+                <div class="navbar-left d-flex align-items-center">
+                    <a class="navbar-brand p-0" href="#"><img src="./assets/imgs/logo-sign.png" alt="Logo"></a>
+                    <ul class="nav d-none d-sm-flex">
+                        <li class="nav-item"><a class="nav-link active highlight-text" href="#"><i class="pr-2 fas fa-home"></i>HOME</a></li>
+                        <li class="nav-item"><a class="nav-link secondary-text" href="./search-results.html"><i class="pr-2 fas fa-th"></i>COLLECTIONS</a></li>
+                        <li class="nav-item"><a class="nav-link secondary-text" href="#"><i class="pr-2 fas fa-shopping-basket"></i>PURCHASE LIST</a></li>
+                        <li class="nav-item  d-none d-md-flex ml-4"><a class="nav-link highlight-bg posting-link" href="#">POST AN AD</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-right d-none d-lg-inline-block">
+                    <a class="pl-2 secondary-text" href="#"><i class="fas fa-envelope"></i></a>
+                    <a class="pl-2 text-white" href="#">Nicolas Horn</a>
+                    <a class="pl-2 text-white" href="#"><img class="rounded-circle" src="./assets/imgs/profile-photo.jpg" alt="profile image"></a>
+                </div>
+                <a class="menu-button d-inline-block d-lg-none" href="#"><i class="highlight-text fas fa-bars"></i></a>
+            </div>
+        </nav>
+
+        <header class="main-header pb-md-5 pt-md-2 container-fluid">
+            <div class="main-header-inner limited-width">
+                <div class="header-title text-white py-5 d-block row">
+                    <h1 class="text-white">SELECTIFF FURNITURE</h1>
+                    <span>Buying and Selling Couldn't be Simpler than this!</span>    
+                </div>
+                <form class="header-form row mx-5 pb-4 justify-content-center" action="/" id="search-form">
+                    <select class="col-md-2 mr-md-1 mb-1 mb-md-0" id="department" name="department" form="search-form">
+                        <option value="all">All Departments</option>
+                        <option value="us">Furniture</option>
+                        <option value="asia">Mattresses</option>
+                        <option value="europe">Baby + Kids</option>
+                        <option value="europe">Outdoor</option>
+                        <option value="europe">Bedding</option>
+                    </select>
+                    <input class="col-md-3 mr-md-1 mb-1 mb-md-0" type="search" name="search" id="search"
+                        placeholder="What do you search for?">
+                    <input class="col-md-3 mr-md-1 mr-md-3 mb-1 mb-md-0" list="regions" name="regions" placeholder="Choose your region">
+                    <datalist id="regions">
+                        <option value="All Countries">
+                        <option value="US">
+                        <option value="Asia">
+                        <option value="Europe">
+                    </datalist>
+                    <input class="col col-md-1" type="submit" value="Search">
+                </form>
+            </div>
+        </header>
+
+        <section class="hot-ads container-fluid limited-width px-1 px-md-5">
+            <h3 class="row secondary-text mb-0 mt-3 pl-3 pl-md-0">HOT ADS</h3>
+            <div class="hot-ads-container p-3 pb-4 row d-flex justify-content-center align-items-center">
+                <button class="hot-ads-container-controllers d-none d-sm-flex justify-content-center align-items-center"><i class="fas fa-chevron-left"></i></button>
+                <div class="hot-ads-option d-md-flex align-items-md-center col-md">
+                    <img class="hot-ads-carousel-image col-sm-9 col-md-5 col-lg-3 pl-md-0 mx-sm-5 mx-md-0" src="./assets/imgs/furniture-living-3.jpg" alt="Image">
+                    <div class="hot-ads-carousel-right col-12 col-md">
+                        <h4 class="highlight-text">Accrington 3-Piece Sectional with Chaise</h4>
+                        <p>Looking for the perfect blend of decadent comfort and contemporary flair? Feast your eyes on the Accrington 2-piece
+                        sectional. Tufted box cushioning and thick pillow top armrests brilliantly merge style and a sumptuous feel. Wonderfully
+                        plush to the touch, the sectional’s earthy brown-tone fabric is the ultimate choice for a richly neutral look.</p>
+                        <span><strong>By: </strong>Accrington</span>
+                        <span class="d-block mb-3"><strong>Fabric Details: </strong>Body: Polyester (100)%</span>
+                        <button class="btn highlight-bg text-white mb-0 mb-sm-0">850$</button>
+                        <button class="btn highlight-bg text-white">Purchase details</button>
+                    </div>
+                </div>
+                <button class="hot-ads-container-controllers d-none d-sm-flex justify-content-center align-items-center"><i class="fas fa-chevron-right"></i></button>
+            </div>
+            <div class="mobile-carousel d-flex d-sm-none pb-4">
+                <i class="px-1 fa fa-circle" aria-hidden="true"></i>
+                <i class="px-1 fa fa-circle" aria-hidden="true"></i>
+                <i class="px-1 fa fa-circle active" aria-hidden="true"></i>
+                <i class="px-1 fa fa-circle" aria-hidden="true"></i>
+                <i class="px-1 fa fa-circle" aria-hidden="true"></i>
+            </div>
+        </section>
+
+        <div class="categories-wrapper">
+            <div class="categories-wrapper-inner limited-width">
+                <section class="category mb-5">
+                    <div class="category-header p-3 border-bottom">
+                        <div class="category-header-left">
+                            <i class="secondary-text fas fa-desktop"></i>
+                            <a class="d-flex align-self-end" href="./search-results.html">
+                                <h3 class="main-text mb-0 pl-3 pr-2 d-inline font-weight-bold">Living Room Furniture</h3>
+                            </a>
+                            <span class="sub-category secondary-text d-none d-md-inline-block">(Sectionals, Sofas & Couches, Loveseats, Sleeper Sofas, etc.)</span>
+                        </div>
+                        <a class="view-all highlight-text font-weight-bold" href="#">View All</a>
+                    </div>
+                    <div class="category-content py-3 position-relative">
+                        <div class="category-content-scrolling-wrapper">
+                            <div class="card d-inline-block mr-2 ml-5">
+                                <img class="card-img-top" src="./assets/imgs/furniture-living-1.jpg" alt="">
+                                <div class="card-body p-2">
+                                    <h5 class="card-title m-0">McCade 3-Piece Reclining Sectional</h5>
+                                    <span class="d-block highlight-text mb-2">New Collection</span>
+                                    <span class="d-block">Premium In-Home Delivery</span>
+                                    <div class="card-bottom mt-3">
+                                        <a class="btn border-secondary secondary-text btn-sm" href="#">+</a>
+                                        <strong class="highlight-text">$450</strong>
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <div class="card d-inline-block mr-2">
+                                <img class="card-img-top" src="./assets/imgs/furniture-living-2.jpg" alt="">
+                                <div class="card-body p-2">
+                                    <h5 class="card-title m-0">Hallenberg 2-Piece Sectional</h5>
+                                    <span class="d-block highlight-text mb-2">New Collection</span>
+                                    <span class="d-block">Premium In-Home Delivery</span>
+                                    <div class="card-bottom mt-3">
+                                        <a class="btn border-secondary secondary-text btn-sm" href="#">+</a>
+                                        <strong class="highlight-text">$520</strong>
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <div class="card d-inline-block mr-2">
+                                <img class="card-img-top" src="./assets/imgs/furniture-living-3.jpg" alt="">
+                                <div class="card-body p-2">
+                                    <h5 class="card-title m-0">Jinllingsly 3-Piece Sectional</h5>
+                                    <span class="d-block highlight-text mb-2">Pre-order</span>
+                                    <span class="d-block">Premium In-Home Delivery</span>
+                                    <div class="card-bottom mt-3">
+                                        <a class="btn border-secondary secondary-text btn-sm" href="#">+</a>
+                                        <strong class="highlight-text">$340</strong>
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <div class="card d-inline-block mr-2">
+                                <img class="card-img-top" src="./assets/imgs/furniture-living-4.jpg" alt="">
+                                <div class="card-body p-2">
+                                    <h5 class="card-title m-0">Larusi 2-Piece Sectional with Chaise</h5>
+                                    <span class="d-block highlight-text mb-2">New Collection</span>
+                                    <span class="d-block">Premium In-Home Delivery</span>
+                                    <div class="card-bottom mt-3">
+                                        <a class="btn border-secondary secondary-text btn-sm" href="#">+</a>
+                                        <strong class="highlight-text">$630</strong>
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <div class="card d-inline-block mr-2">
+                                <img class="card-img-top" src="./assets/imgs/furniture-living-5.jpg" alt="">
+                                <div class="card-body p-2">
+                                    <h5 class="card-title m-0">Bladen 2-Piece Sectional</h5>
+                                    <span class="d-block highlight-text mb-2">Previous Collection</span>
+                                    <span class="d-block">Premium In-Home Delivery</span>
+                                    <div class="card-bottom mt-3">
+                                        <a class="btn border-secondary secondary-text btn-sm" href="#">+</a>
+                                        <strong class="highlight-text">$230</strong>
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <div class="card d-inline-block mr-2">
+                                <img class="card-img-top" src="./assets/imgs/furniture-living-6.jpg" alt="">
+                                <div class="card-body p-2">
+                                    <h5 class="card-title m-0">Jinllingsly 3-Piece Sectional with Chaise</h5>
+                                    <span class="d-block highlight-text mb-2">New Collection</span>
+                                    <span class="d-block">Premium In-Home Delivery</span>
+                                    <div class="card-bottom mt-3">
+                                        <a class="btn border-secondary secondary-text btn-sm" href="#">+</a>
+                                        <strong class="highlight-text">$340</strong>
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <div class="card d-inline-block mr-2">
+                                <img class="card-img-top" src="./assets/imgs/furniture-living-7.jpg" alt="">
+                                <div class="card-body p-2">
+                                    <h5 class="card-title m-0">Accrington 2-Piece Sectional with Chaise</h5>
+                                    <span class="d-block highlight-text mb-2">Pre-order</span>
+                                    <span class="d-block">Premium In-Home Delivery</span>
+                                    <div class="card-bottom mt-3">
+                                        <a class="btn border-secondary secondary-text btn-sm" href="#">+</a>
+                                        <strong class="highlight-text">$270</strong>
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <div class="card d-inline-block mr-2">
+                                <img class="card-img-top" src="./assets/imgs/furniture-living-8.jpg" alt="">
+                                <div class="card-body p-2">
+                                    <h5 class="card-title m-0">Eltmann 3-Piece Sectional with Cuddler</h5>
+                                    <span class="d-block highlight-text mb-2">New Collection</span>
+                                    <span class="d-block">Premium In-Home Delivery</span>
+                                    <div class="card-bottom mt-3">
+                                        <a class="btn border-secondary secondary-text btn-sm" href="#">+</a>
+                                        <strong class="highlight-text">$670</strong>
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <div class="card d-inline-block mr-5">
+                                <img class="card-img-top" src="./assets/imgs/furniture-living-9.jpg" alt="">
+                                <div class="card-body p-2">
+                                    <h5 class="card-title m-0">Eltmann 3-Piece Sectional with Cuddler</h5>
+                                    <span class="d-block highlight-text mb-2">Previous Collection</span>
+                                    <span class="d-block">Premium In-Home Delivery</span>
+                                    <div class="card-bottom mt-3">
+                                        <a class="btn border-secondary secondary-text btn-sm" href="#">+</a>
+                                        <strong class="highlight-text">$450</strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="scroll-controller-left main-text"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+                        <button class="scroll-controller-right main-text"><i class="fa fa-chevron-right"
+                                aria-hidden="true"></i></button>
+                    </div>
+                </section>
+
+                <section class="category mb-5">
+                    <div class="category-header p-3 border-bottom">
+                        <div class="category-header-left">
+                            <i class="secondary-text fas fa-desktop"></i>
+                            <a class="d-flex align-self-end" href="./search-results.html">
+                                <h3 class="main-text mb-0 pl-3 pr-2 d-inline font-weight-bold">Bedroom Furniture</h3>
+                            </a>
+                            <span class="sub-category secondary-text d-none d-md-inline-block">(Beds, Headboards, Nightstands, Dressers, Mirrored Dressers, etc.)</span>
+                        </div>
+                        <a class="view-all highlight-text font-weight-bold" href="#">View All</a>
+                    </div>
+                    <div class="category-content py-3 position-relative">
+                        <div class="category-content-scrolling-wrapper">
+                            <div class="card d-inline-block mr-2 ml-5">
+                                <img class="card-img-top" src="./assets/imgs/furniture-bedroom-1.jpg" alt="">
+                                <div class="card-body p-2">
+                                    <h5 class="card-title m-0">Willowton Panel Bed</h5>
+                                    <span class="d-block highlight-text mb-2">New Collection</span>
+                                    <span class="d-block">FREE UPS Shipping</span>
+                                    <div class="card-bottom mt-3">
+                                        <a class="btn border-secondary secondary-text btn-sm" href="#">+</a>
+                                        <strong class="highlight-text">$450</strong>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card d-inline-block mr-2">
+                                <img class="card-img-top" src="./assets/imgs/furniture-bedroom-2.jpg" alt="">
+                                <div class="card-body p-2">
+                                    <h5 class="card-title m-0">Starmore Panel Bed</h5>
+                                    <span class="d-block highlight-text mb-2">New Collection</span>
+                                    <span class="d-block">FREE UPS Shipping</span>
+                                    <div class="card-bottom mt-3">
+                                        <a class="btn border-secondary secondary-text btn-sm" href="#">+</a>
+                                        <strong class="highlight-text">$520</strong>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card d-inline-block mr-2">
+                                <img class="card-img-top" src="./assets/imgs/furniture-bedroom-3.jpg" alt="">
+                                <div class="card-body p-2">
+                                    <h5 class="card-title m-0">Dolante Upholstered Bed</h5>
+                                    <span class="d-block highlight-text mb-2">Pre-order</span>
+                                    <span class="d-block">FREE UPS Shipping</span>
+                                    <div class="card-bottom mt-3">
+                                        <a class="btn border-secondary secondary-text btn-sm" href="#">+</a>
+                                        <strong class="highlight-text">$340</strong>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card d-inline-block mr-2">
+                                <img class="card-img-top" src="./assets/imgs/furniture-bedroom-4.jpg" alt="">
+                                <div class="card-body p-2">
+                                    <h5 class="card-title m-0">Wynnlow Panel Bed</h5>
+                                    <span class="d-block highlight-text mb-2">New Collection</span>
+                                    <span class="d-block">FREE UPS Shipping</span>
+                                    <div class="card-bottom mt-3">
+                                        <a class="btn border-secondary secondary-text btn-sm" href="#">+</a>
+                                        <strong class="highlight-text">$630</strong>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="card d-inline-block mr-2">
+                                <img class="card-img-top" src="./assets/imgs/furniture-bedroom-5.jpg" alt="">
+                                <div class="card-body p-2">
+                                    <h5 class="card-title m-0">Alisdair Sleigh Bed</h5>
+                                    <span class="d-block highlight-text mb-2">Previous Collection</span>
+                                    <span class="d-block">FREE UPS Shipping</span>
+                                    <div class="card-bottom mt-3">
+                                        <a class="btn border-secondary secondary-text btn-sm" href="#">+</a>
+                                        <strong class="highlight-text">$230</strong>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="card d-inline-block mr-2">
+                                <img class="card-img-top" src="./assets/imgs/furniture-bedroom-6.jpg" alt="">
+                                <div class="card-body p-2">
+                                    <h5 class="card-title m-0">Flynnter Sleigh Bed with 2 Storage Drawers</h5>
+                                    <span class="d-block highlight-text mb-2">New Collection</span>
+                                    <span class="d-block">FREE UPS Shipping</span>
+                                    <div class="card-bottom mt-3">
+                                        <a class="btn border-secondary secondary-text btn-sm" href="#">+</a>
+                                        <strong class="highlight-text">$340</strong>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card d-inline-block mr-2">
+                                <img class="card-img-top" src="./assets/imgs/furniture-bedroom-7.jpg" alt="">
+                                <div class="card-body p-2">
+                                    <h5 class="card-title m-0">Cambeck Panel Bed with 2 Storage Drawers</h5>
+                                    <span class="d-block highlight-text mb-2">Pre-order</span>
+                                    <span class="d-block">FREE UPS Shipping</span>
+                                    <div class="card-bottom mt-3">
+                                        <a class="btn border-secondary secondary-text btn-sm" href="#">+</a>
+                                        <strong class="highlight-text">$270</strong>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card d-inline-block mr-2">
+                                <img class="card-img-top" src="./assets/imgs/furniture-bedroom-8.jpg" alt="">
+                                <div class="card-body p-2">
+                                    <h5 class="card-title m-0">Bellaby Crossbuck Panel Bed</h5>
+                                    <span class="d-block highlight-text mb-2">New Collection</span>
+                                    <span class="d-block">FREE UPS Shipping</span>
+                                    <div class="card-bottom mt-3">
+                                        <a class="btn border-secondary secondary-text btn-sm" href="#">+</a>
+                                        <strong class="highlight-text">$670</strong>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card d-inline-block mr-5">
+                                <img class="card-img-top" src="./assets/imgs/furniture-bedroom-9.jpg" alt="">
+                                <div class="card-body p-2">
+                                    <h5 class="card-title m-0">Culverbach Panel Bed</h5>
+                                    <span class="d-block highlight-text mb-2">Previous Collection</span>
+                                    <span class="d-block">FREE UPS Shipping</span>
+                                    <div class="card-bottom mt-3">
+                                        <a class="btn border-secondary secondary-text btn-sm" href="#">+</a>
+                                        <strong class="highlight-text">$450</strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="scroll-controller-left main-text"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+                        <button class="scroll-controller-right main-text"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+                    </div>
+                </section>
+
+                <section class="category mb-5">
+                    <div class="category-header p-3 border-bottom">
+                        <div class="category-header-left">
+                            <i class="secondary-text fas fa-desktop"></i>
+                            <a class="d-flex align-self-end" href="./search-results.html">
+                                <h3 class="main-text mb-0 pl-3 pr-2 d-inline font-weight-bold">Kitchen & Dining Room Furniture</h3>
+                            </a>
+                            <span class="sub-category secondary-text d-none d-md-inline-block">(Dining Tables, Dining Chairs, Dining Sets, etc.)</span>
+                        </div>
+                        <a class="view-all highlight-text font-weight-bold" href="#">View All</a>
+                    </div>
+                    <div class="category-content py-3 position-relative">
+                        <div class="category-content-scrolling-wrapper">
+                            <div class="card d-inline-block mr-2 ml-5">
+                                <img class="card-img-top" src="./assets/imgs/furniture-kitchen-1.jpg" alt="">
+                                <div class="card-body p-2">
+                                    <h5 class="card-title m-0">Moriville 5-Piece Dining Room</h5>
+                                    <span class="d-block highlight-text mb-2">New Collection</span>
+                                    <span class="d-block">Premium In-Home Delivery</span>
+                                    <div class="card-bottom mt-3">
+                                        <a class="btn border-secondary secondary-text btn-sm" href="#">+</a>
+                                        <strong class="highlight-text">$450</strong>
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <div class="card d-inline-block mr-2">
+                                <img class="card-img-top" src="./assets/imgs/furniture-kitchen-2.jpg" alt="">
+                                <div class="card-body p-2">
+                                    <h5 class="card-title m-0">Moriville 6-Piece Counter Height Dining Room</h5>
+                                    <span class="d-block highlight-text mb-2">New Collection</span>
+                                    <span class="d-block">Premium In-Home Delivery</span>
+                                    <div class="card-bottom mt-3">
+                                        <a class="btn border-secondary secondary-text btn-sm" href="#">+</a>
+                                        <strong class="highlight-text">$520</strong>
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <div class="card d-inline-block mr-2">
+                                <img class="card-img-top" src="./assets/imgs/furniture-kitchen-3.jpg" alt="">
+                                <div class="card-body p-2">
+                                    <h5 class="card-title m-0">Bridson Dining Room Table and Chairs with Bench (Set of 6)</h5>
+                                    <span class="d-block highlight-text mb-2">Pre-order</span>
+                                    <span class="d-block">Premium In-Home Delivery</span>
+                                    <div class="card-bottom mt-3">
+                                        <a class="btn border-secondary secondary-text btn-sm" href="#">+</a>
+                                        <strong class="highlight-text">$340</strong>
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <div class="card d-inline-block mr-2">
+                                <img class="card-img-top" src="./assets/imgs/furniture-kitchen-4.jpg" alt="">
+                                <div class="card-body p-2">
+                                    <h5 class="card-title m-0">Skempton Dining Room Table and Chairs (Set of 7)</h5>
+                                    <span class="d-block highlight-text mb-2">New Collection</span>
+                                    <span class="d-block">Premium In-Home Delivery</span>
+                                    <div class="card-bottom mt-3">
+                                        <a class="btn border-secondary secondary-text btn-sm" href="#">+</a>
+                                        <strong class="highlight-text">$630</strong>
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <div class="card d-inline-block mr-2">
+                                <img class="card-img-top" src="./assets/imgs/furniture-kitchen-5.jpg" alt="">
+                                <div class="card-body p-2">
+                                    <h5 class="card-title m-0">Whitesburg 5-Piece Dining Room</h5>
+                                    <span class="d-block highlight-text mb-2">Previous Collection</span>
+                                    <span class="d-block">Premium In-Home Delivery</span>
+                                    <div class="card-bottom mt-3">
+                                        <a class="btn border-secondary secondary-text btn-sm" href="#">+</a>
+                                        <strong class="highlight-text">$230</strong>
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <div class="card d-inline-block mr-2">
+                                <img class="card-img-top" src="./assets/imgs/furniture-kitchen-6.jpg" alt="">
+                                <div class="card-body p-2">
+                                    <h5 class="card-title m-0">Whitesburg 5-Piece Dining Room</h5>
+                                    <span class="d-block highlight-text mb-2">New Collection</span>
+                                    <span class="d-block">Premium In-Home Delivery</span>
+                                    <div class="card-bottom mt-3">
+                                        <a class="btn border-secondary secondary-text btn-sm" href="#">+</a>
+                                        <strong class="highlight-text">$340</strong>
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <div class="card d-inline-block mr-2">
+                                <img class="card-img-top" src="./assets/imgs/furniture-kitchen-7.jpg" alt="">
+                                <div class="card-body p-2">
+                                    <h5 class="card-title m-0">Whitesburg 6-Piece Dining Room</h5>
+                                    <span class="d-block highlight-text mb-2">Pre-order</span>
+                                    <span class="d-block">Premium In-Home Delivery</span>
+                                    <div class="card-bottom mt-3">
+                                        <a class="btn border-secondary secondary-text btn-sm" href="#">+</a>
+                                        <strong class="highlight-text">$270</strong>
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <div class="card d-inline-block mr-2">
+                                <img class="card-img-top" src="./assets/imgs/furniture-kitchen-8.jpg" alt="">
+                                <div class="card-body p-2">
+                                    <h5 class="card-title m-0">Whitesburg 5-Piece Dining Room</h5>
+                                    <span class="d-block highlight-text mb-2">New Collection</span>
+                                    <span class="d-block">Premium In-Home Delivery</span>
+                                    <div class="card-bottom mt-3">
+                                        <a class="btn border-secondary secondary-text btn-sm" href="#">+</a>
+                                        <strong class="highlight-text">$670</strong>
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <div class="card d-inline-block mr-5">
+                                <img class="card-img-top" src="./assets/imgs/furniture-kitchen-9.jpg" alt="">
+                                <div class="card-body p-2">
+                                    <h5 class="card-title m-0">Johnelle 5-Piece Dining Room</h5>
+                                    <span class="d-block highlight-text mb-2">Previous Collection</span>
+                                    <span class="d-block">Premium In-Home Delivery</span>
+                                    <div class="card-bottom mt-3">
+                                        <a class="btn border-secondary secondary-text btn-sm" href="#">+</a>
+                                        <strong class="highlight-text">$450</strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="scroll-controller-left main-text"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+                        <button class="scroll-controller-right main-text"><i class="fa fa-chevron-right"
+                                aria-hidden="true"></i></button>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <footer class="main-footer container-fluid limited-width">
+            <div class="row justify-content-around justify-content-lg-between p-3">
+                <div class="col-md-4 col-lg-3 d-none d-md-inline-block">
+                    <img class="col-md-10 d-block mb-2" src="./assets/imgs/logo-full.png" alt="">
+                    <p>Our passion for designing, manufacturing, and selling furniture has defined us from day one. Now we’re
+                        sharing that
+                        passion with you – by going on a mission to make the world feel a little more like home.</p>
+                </div>
+        
+                <nav class="footer-category-nav col-12 col-sm-7 col-md-4 col-lg-3">
+                    <h3>CATEGORIES</h3>
+                    <ul class="footer-category-nav-list p-0">
+                        <li class="pb-2"><a class="secondary-text" href="./search-results.html">Sectionals</a></li>
+                        <li class="pb-2"><a class="secondary-text" href="./search-results.html">Sofas</a></li>
+                        <li class="pb-2"><a class="secondary-text" href="./search-results.html">Loveseats</a></li>
+                        <li class="pb-2"><a class="secondary-text" href="./search-results.html">Sleepers</a></li>
+                        <li class="pb-2"><a class="secondary-text" href="./search-results.html">Recliners</a></li>
+                        <li class="pb-2"><a class="secondary-text" href="./search-results.html">Beds</a></li>
+                        <li class="pb-2"><a class="secondary-text" href="./search-results.html">Headboards</a></li>
+                        <li class="pb-2"><a class="secondary-text" href="./search-results.html">Dressers</a></li>
+                        <li class="pb-2"><a class="secondary-text" href="./search-results.html">Dressers</a></li>
+                        <li class="pb-2"><a class="secondary-text" href="./search-results.html">Storage</a></li>
+                        <li class="pb-2"><a class="secondary-text" href="./search-results.html">Tables</a></li>
+                        <li class="pb-2"><a class="secondary-text" href="./search-results.html">Chairs</a></li>
+                        <li class="pb-2"><a class="secondary-text" href="./search-results.html">Height Sets</a></li>
+                        <li class="pb-2"><a class="secondary-text" href="./search-results.html">Tabletop</a></li>
+                    </ul>
+                </nav>
+        
+                <nav class="footer-website-nav col-12 col-sm-5 col-md-3 col-lg-2">
+                    <h3>NAVIGATION</h3>
+                    <ul class="footer-website-nav-list p-0">
+                        <li class="pb-2"><a class="secondary-text" href="./index.html">Home</a></li>
+                        <li class="pb-2"><a class="secondary-text" href="#">Sign In</a></li>
+                        <li class="pb-2"><a class="secondary-text" href="#">Sign Up</a></li>
+                        <li class="pb-2"><a class="secondary-text" href="#">Terms & Conditions</a></li>
+                        <li class="pb-2"><a class="secondary-text" href="#">FAQ</a></li>
+                        <li class="pb-2"><a class="secondary-text" href="#">Help</a></li>
+                    </ul>
+                </nav>
+        
+                <div class="view-options col-auto align-self-center d-none d-lg-inline-block">
+                    <div class="regions my-3">
+                        <span class="highlight-text d-inline-block">Region</span>
+                        <button class="btn border-secondary px-3">U.S.</button>
+                    </div>
+                    <div class="langs my-3">
+                        <span class="highlight-text d-inline-block">LANGUAGE</span>
+                        <button class="btn border-secondary px-3">English</button>
+                    </div>
+                    <div class="currencies my-3">
+                        <span class="highlight-text d-inline-block">CURRENCY</span>
+                        <button class="btn border-secondary px-3">USD</button>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="copyright row limited-width d-block d-md-flex align-items-center justify-content-between px-3 py-2">
+                <p>Copyright© 2020 Selectiff.com All Rights reserved. <span class="d-block">Designed by Mohammed Awad. Developed
+                        by Azamat Nuriddinov.</span></p>
+                <div class="social-icons">
+                    <a class="pl-md-3 pr-3" href="https://www.linkedin.com/in/azamat-nuriddinov-57579868/"><i
+                            class="fab fa-linkedin" aria-hidden="true"></i></a>
+                    <a class="pl-md-3 pr-3" href="https://twitter.com/azamat_nuriddin"><i class="fab fa-twitter"
+                            aria-hidden="true"></i></a>
+                    <a class="pl-md-3 pr-3" href="https://www.facebook.com/cersaie"><i class="fab fa-facebook"
+                            aria-hidden="true"></i></a>
+                    <a class="pl-md-3 pr-3" href="https://github.com/bettercallazamat"><i class="fab fa-github"
+                            aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+</html>

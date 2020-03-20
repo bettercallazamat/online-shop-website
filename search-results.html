@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <title>Selectiff | Search results</title>
+</head>
+    <div class="wrapper">
+        <nav class="navbar py-1">
+            <div class="navbar-inner limited-width px-2">
+                <div class="navbar-left d-flex align-items-center">
+                    <a class="navbar-brand p-0" href="./index.html"><img src="./assets/imgs/logo-sign.png" alt="Logo"></a>
+                    <ul class="nav d-none d-sm-flex">
+                        <li class="nav-item"><a class="nav-link active highlight-text" href="./index.html"><i
+                                    class="pr-2 fas fa-home"></i>HOME</a></li>
+                        <li class="nav-item"><a class="nav-link secondary-text" href="./search-results.html"><i
+                                    class="pr-2 fas fa-th"></i>COLLECTIONS</a></li>
+                        <li class="nav-item"><a class="nav-link secondary-text" href="#"><i
+                                    class="pr-2 fas fa-shopping-basket"></i>PURCHASE LIST</a></li>
+                        <li class="nav-item  d-none d-md-flex ml-4"><a class="nav-link highlight-bg posting-link" href="#">POST
+                                AN AD</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-right d-none d-lg-inline-block">
+                    <a class="pl-2 secondary-text" href="#"><i class="fas fa-envelope"></i></a>
+                    <a class="pl-2 text-white" href="#">Nicolas Horn</a>
+                    <a class="pl-2 text-white" href="#"><img class="rounded-circle" src="./assets/imgs/profile-photo.jpg"
+                            alt="profile image"></a>
+                </div>
+                <a class="menu-button d-inline-block d-lg-none" href="#"><i class="highlight-text fas fa-bars"></i></a>
+            </div>
+        </nav>
+        
+        <header class="main-header py-4 container-fluid">
+            <div class="main-header-inner limited-width">
+                <div class="header-title main-header-search text-white text-center row justify-content-center mb-3 d-block">
+                    <h1 class="search-title title mb-0 text-white">SELECTIFF FURNITURE</h1>
+                    <span class="subtitle">Buying and Selling Couldn't be Simpler than this!</span>
+                </div>
+                <form class="header-form row justify-content-center mx-5" action="/" id="search-form">
+                    <select class="col-md-2 mr-md-1 mb-1 mb-md-0" id="department" name="department" form="search-form">
+                        <option value="all">All Department</option>
+                        <option value="us">US</option>
+                        <option value="asia">Asia</option>
+                        <option value="europe">Europe</option>
+                    </select>
+                    <input class="col-md-3 mr-md-1 mb-1 mb-md-0" type="search" name="search" id="search" placeholder="What do you search for?">
+                    <input class="col-md-3 mr-md-1 mr-md-3 mb-1 mb-md-0" list="regions" name="regions" placeholder="Choose your region">
+                    <datalist id="regions">
+                        <option value="All Countries">
+                        <option value="US">
+                        <option value="Asia">
+                        <option value="Europe">
+                    </datalist>
+                    <input class="col col-md-1" type="submit" value="Search">
+                </form>
+            </div>
+        </header>
+
+        <main class="search-main p-3">
+            <div class="search-main-inner limited-width d-md-flex">
+                <aside class="search-filters pb-3 py-md-3 container-fluid px-3 px-sm-5 px-md-3 border-bottom border-secondary border-md-0">
+                    <div class="search-filters-inner row align-items-center justify-content-around justify-content-md-start">
+                        <div class="col-6 col-sm-5 col-md-auto pl-md-0">
+                            <input type="checkbox" id="available" name="available" value="available">
+                            <label class="mr-3" for="available"> Available</label><br class="d-block d-md-none">
+                            <input type="checkbox" id="order" name="order" value="order">
+                            <label for="order">Order</label>
+                        </div>
+                        
+                        <div class="col-6 col-sm-5 col-md-auto pl-md-0">
+                            <strong class="d-block mt-2 mb-1">Brand</strong>
+                            <input type="checkbox" id="ipek" name="ipek" value="ipek">
+                            <label for="ipek">Ipek</label><br>
+                            <input type="checkbox" id="safran" name="safran" value="safran">
+                            <label for="safran">Safran</label><br>
+                            <input type="checkbox" id="bellona" name="bellona" value="bellona">
+                            <label for="bellona">Bellona</label><br>
+                            <input type="checkbox" id="istikbal" name="istikbal" value="istikbal">
+                            <label for="istikbal">Istikbal</label>
+                        </div>
+    
+                        <div class="col-6 col-sm-5 col-md-auto pl-md-0">
+                            <strong class="d-block mt-2 mb-1">Price</strong>
+                            <input type="checkbox" id="budgetary" name="budgetary" value="budgetary">
+                            <label for="budgetary">Budgetary</label><br>
+                            <input type="checkbox" id="mclass" name="mclass" value="mclass">
+                            <label for="mclass">Middle Class</label><br>
+                            <input type="checkbox" id="lux" name="lux" value="lux">
+                            <label for="lux">Lux</label>
+                        </div>
+    
+                        <div class="col-6 col-sm-5 col-md-auto pl-md-0">
+                            <strong class="d-block mt-2 mb-1">Style</strong>
+                            <input type="checkbox" id="classic" name="classic" value="classic">
+                            <label for="classic">Classic</label><br>
+                            <input type="checkbox" id="luxury" name="luxury" value="luxury">
+                            <label for="luxury">Luxury</label><br>
+                            <input type="checkbox" id="minimalistic" name="minimalistic" value="minimalistic">
+                            <label for="minimalistic">Minimalistic</label>
+                        </div>
+                    </div>
+                </aside>
+
+                <section class="search-results container-fluid">
+                    <div class="search-info row p-3">
+                        <span><strong>138</strong> Results for <strong>"Bedroom sets"</strong> Search at <strong>Kyrgyzstan</strong> in Category <strong>Bedroom Furniture</strong></span>
+                    </div>
+
+                    <div class="search-result row p-3 mb-2">
+                        <div class="search-result-img-container position-relative col-8 col-sm-3 col-lg-4 col-xl-3 px-0">
+                            <img src="./assets/imgs/furniture-bedroom-1.jpg" alt="">
+                            <div class="search-result-img-contollers">
+                                <a class="search-result-img-contoller d-inline-block" href="#"><i class="highlight-text px-3 fa fa-chevron-left" aria-hidden="true"></i></a>
+                                <a class="search-result-img-contoller d-inline-block" href="#"><i class="highlight-text px-3 fa fa-chevron-right" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                        <div class="search-result-text col p-3 pl-4 position-relative">
+                            <h3 class="mb-0">Harlinton 6-Piece Bedroom</h3>
+                            <span class="highlight-text font-weight-bold">New Collection</span>
+                            <p class="mb-0 mb-5 my-lg-3 text-secondary">With its unique two-tone treatment of replicated oak grain and metal, Harlinton 6-piece queen bedroom set is where
+                            modern meets vintage in the coolest possible way. Beautifully weathered treatment of the inlaid plank-style boards has a
+                            very “reclaimed” quality, while the metal framework and ultra clean-lined design is urban chic.</p>
+                            <span class="location d-none d-lg-block mb-3 text-secondary"><strong class="text-main">Color: </strong>Warm Gray/Charcoal</span>
+                            <span class="date text-secondary d-none d-lg-block">23 Nov, 2020</span>
+                            <button class="button-add"><i class="text-secondary fa fa-plus" aria-hidden="true"></i></button>
+                            <div class="price-tag-with-cta">
+                                <a href="#"><span class="cta-call d-inline-block px-3 py-2 mr-2 rounded">Give a Call</span></a>
+                                <span class="price-tag d-inline-block px-3 py-2 rounded">$150</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="search-result row p-3 mb-2">
+                        <div class="search-result-img-container position-relative col-8 col-sm-3 col-lg-4 col-xl-3 px-0">
+                            <img src="./assets/imgs/furniture-bedroom-2.jpg" alt="">
+                            <div class="search-result-img-contollers">
+                                <a class="search-result-img-contoller d-inline-block" href="#"><i
+                                        class="highlight-text px-3 fa fa-chevron-left" aria-hidden="true"></i></a>
+                                <a class="search-result-img-contoller d-inline-block" href="#"><i
+                                        class="highlight-text px-3 fa fa-chevron-right" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                        <div class="search-result-text col p-3 pl-4 position-relative">
+                            <h3 class="mb-0">Blaneville 6-Piece Bedroom </h3>
+                            <span class="highlight-text font-weight-bold">New Collection</span>
+                            <p class="mb-0 mb-5 my-lg-3 text-secondary">The huntress has found her next prized possession in the Blaneville 6-piece queen bedroom set. Naturally enticing, it is
+                            largely full of character. Burnished brown finish over replicated oak grain adds interest to the hefty wood.</p>
+                            <span class="location d-none d-lg-block mb-3 text-secondary"><strong class="text-main">Color: </strong>Brown</span>
+                            <span class="date text-secondary d-none d-lg-block">23 Nov, 2020</span>
+                            <button class="button-add"><i class="text-secondary fa fa-plus" aria-hidden="true"></i></button>
+                            <div class="price-tag-with-cta">
+                                <a href="#"><span class="cta-call d-inline-block px-3 py-2 mr-2 rounded">Give a Call</span></a>
+                                <span class="price-tag d-inline-block px-3 py-2 rounded">$150</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="search-result row p-3 mb-2">
+                        <div class="search-result-img-container position-relative col-8 col-sm-3 col-lg-4 col-xl-3 px-0">
+                            <img src="./assets/imgs/furniture-bedroom-3.jpg" alt="">
+                            <div class="search-result-img-contollers">
+                                <a class="search-result-img-contoller d-inline-block" href="#"><i
+                                        class="highlight-text px-3 fa fa-chevron-left" aria-hidden="true"></i></a>
+                                <a class="search-result-img-contoller d-inline-block" href="#"><i
+                                        class="highlight-text px-3 fa fa-chevron-right" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                        <div class="search-result-text col p-3 pl-4 position-relative">
+                            <h3 class="mb-0">Alisdair 5-Piece Master Bedroom</h3>
+                            <span class="highlight-text font-weight-bold">New Collection</span>
+                            <p class="mb-0 mb-5 my-lg-3 text-secondary">The Alisdair 5-piece bedroom set is the epitome of traditional decor. Louis Philippe-style moulding dates back to the
+                            mid-19th century when furnishings were lavish yet somewhat simple.</p>
+                            <span class="location d-none d-lg-block mb-3 text-secondary"><strong class="text-main">Color: </strong>Dark Brown</span>
+                            <span class="date text-secondary d-none d-lg-block">23 Nov, 2020</span>
+                            <button class="button-add"><i class="text-secondary fa fa-plus" aria-hidden="true"></i></button>
+                            <div class="price-tag-with-cta">
+                                <a href="#"><span class="cta-call d-inline-block px-3 py-2 mr-2 rounded">Give a Call</span></a>
+                                <span class="price-tag d-inline-block px-3 py-2 rounded">$150</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="search-result row p-3 mb-2">
+                        <div class="search-result-img-container position-relative col-8 col-sm-3 col-lg-4 col-xl-3 px-0">
+                            <img src="./assets/imgs/furniture-bedroom-4.jpg" alt="">
+                            <div class="search-result-img-contollers">
+                                <a class="search-result-img-contoller d-inline-block" href="#"><i
+                                        class="highlight-text px-3 fa fa-chevron-left" aria-hidden="true"></i></a>
+                                <a class="search-result-img-contoller d-inline-block" href="#"><i
+                                        class="highlight-text px-3 fa fa-chevron-right" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                        <div class="search-result-text col p-3 pl-4 position-relative">
+                            <h3 class="mb-0">Willowton Queen Bed with 2 Nightstands </h3>
+                            <span class="highlight-text font-weight-bold">New Collection</span>
+                            <p class="mb-0 mb-5 my-lg-3 text-secondary">The ultimate look for a beach cottage or shabby chic inspired retreat, the Willowton 5-piece bedroom set carries you
+                            away to a dreamy time and place. Queen panel bed with driftwoody whitewashed finish is wonderfully easy on the eyes.</p>
+                            <span class="location d-none d-lg-block mb-3 text-secondary"><strong class="text-main">Color: </strong>Whitewash</span>
+                            <span class="date text-secondary d-none d-lg-block">23 Nov, 2020</span>
+                            <button class="button-add"><i class="text-secondary fa fa-plus" aria-hidden="true"></i></button>
+                            <div class="price-tag-with-cta">
+                                <a href="#"><span class="cta-call d-inline-block px-3 py-2 mr-2 rounded">Give a Call</span></a>
+                                <span class="price-tag d-inline-block px-3 py-2 rounded">$150</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="search-result row p-3 mb-2">
+                        <div class="search-result-img-container position-relative col-8 col-sm-3 col-lg-4 col-xl-3 px-0">
+                            <img src="./assets/imgs/furniture-bedroom-5.jpg" alt="">
+                            <div class="search-result-img-contollers">
+                                <a class="search-result-img-contoller d-inline-block" href="#"><i
+                                        class="highlight-text px-3 fa fa-chevron-left" aria-hidden="true"></i></a>
+                                <a class="search-result-img-contoller d-inline-block" href="#"><i
+                                        class="highlight-text px-3 fa fa-chevron-right" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                        <div class="search-result-text col p-3 pl-4 position-relative">
+                            <h3 class="mb-0">Jennily 5-Piece Bedroom</h3>
+                            <span class="highlight-text font-weight-bold">New Collection</span>
+                            <p class="mb-0 mb-5 my-lg-3 text-secondary">Given just enough distressing for family heirloom charm, the Jennily bed, dresser and mirror are masteries of modern
+                            farmhouse style. The ultimate choice for a dreamy bedroom retreat, the antiqued white finish is wonderfully easy on the
+                            eyes.</p>
+                            <span class="location d-none d-lg-block mb-3 text-secondary"><strong class="text-main">Color: </strong>Whitewash</span>
+                            <span class="date text-secondary d-none d-lg-block">23 Nov, 2020</span>
+                            <button class="button-add"><i class="text-secondary fa fa-plus" aria-hidden="true"></i></button>
+                            <div class="price-tag-with-cta">
+                                <a href="#"><span class="cta-call d-inline-block px-3 py-2 mr-2 rounded">Give a Call</span></a>
+                                <span class="price-tag d-inline-block px-3 py-2 rounded">$150</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="search-result row p-3 mb-2">
+                        <div class="search-result-img-container position-relative col-8 col-sm-3 col-lg-4 col-xl-3 px-0">
+                            <img src="./assets/imgs/furniture-bedroom-6.jpg" alt="">
+                            <div class="search-result-img-contollers">
+                                <a class="search-result-img-contoller d-inline-block" href="#"><i
+                                        class="highlight-text px-3 fa fa-chevron-left" aria-hidden="true"></i></a>
+                                <a class="search-result-img-contoller d-inline-block" href="#"><i
+                                        class="highlight-text px-3 fa fa-chevron-right" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                        <div class="search-result-text col p-3 pl-4 position-relative">
+                            <h3 class="mb-0">Jennily Bed with 2 Nightstands</h3>
+                            <span class="highlight-text font-weight-bold">New Collection</span>
+                            <p class="mb-0 mb-5 my-lg-3 text-secondary">Given just enough distressing for family heirloom charm, the Jennily 5-piece bedroom set is a mastery in modern
+                            farmhouse style. The ultimate choice for a dreamy bedroom retreat, the antiqued white finish is wonderfully easy on the
+                            eyes.</p>
+                            <span class="location d-none d-lg-block mb-3 text-secondary"><strong class="text-main">Color: </strong>Whitewash</span>
+                            <span class="date text-secondary d-none d-lg-block">23 Nov, 2020</span>
+                            <button class="button-add"><i class="text-secondary fa fa-plus" aria-hidden="true"></i></button>
+                            <div class="price-tag-with-cta">
+                                <a href="#"><span class="cta-call d-inline-block px-3 py-2 mr-2 rounded">Give a Call</span></a>
+                                <span class="price-tag d-inline-block px-3 py-2 rounded">$150</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="search-result row p-3 mb-2">
+                        <div class="search-result-img-container position-relative col-8 col-sm-3 col-lg-4 col-xl-3 px-0">
+                            <img src="./assets/imgs/furniture-bedroom-7.jpg" alt="">
+                            <div class="search-result-img-contollers">
+                                <a class="search-result-img-contoller d-inline-block" href="#"><i
+                                        class="highlight-text px-3 fa fa-chevron-left" aria-hidden="true"></i></a>
+                                <a class="search-result-img-contoller d-inline-block" href="#"><i
+                                        class="highlight-text px-3 fa fa-chevron-right" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                        <div class="search-result-text col p-3 pl-4 position-relative">
+                            <h3 class="mb-0">Harlinton 6-Piece Bedroom</h3>
+                            <span class="highlight-text font-weight-bold">New Collection</span>
+                            <p class="mb-0 mb-5 my-lg-3 text-secondary">The look may be cool and contemporary, but the feel is so cozy. Bring home high-end design that's exceptionally
+                            affordable with the Ralene 6-piece queen bedroom set. Its indulgent take on minimalist design with a clean-lined, blocky
+                            profile is enhanced with thickly padded tufted upholstery</p>
+                            <span class="location d-none d-lg-block mb-3 text-secondary"><strong class="text-main">Color: </strong>Medium Brown</span>
+                            <span class="date text-secondary d-none d-lg-block">23 Nov, 2020</span>
+                            <button class="button-add"><i class="text-secondary fa fa-plus" aria-hidden="true"></i></button>
+                            <div class="price-tag-with-cta">
+                                <a href="#"><span class="cta-call d-inline-block px-3 py-2 mr-2 rounded">Give a Call</span></a>
+                                <span class="price-tag d-inline-block px-3 py-2 rounded">$150</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="search-result-page-contollers m-3">
+                        <a class="mx-1 active text-white" href="#">1</a>
+                        <a class="mx-1" href="#">2</a>
+                        <a class="mx-1" href="#">3</a>
+                        <a class="mx-1" href="#">4</a>
+                        <span class="">...</span>
+                        <a class="mx-1" href="#">12</a>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <footer class="main-footer container-fluid limited-width">
+            <div class="row justify-content-around justify-content-lg-between p-3">
+                <div class="col-md-4 col-lg-3 d-none d-md-inline-block">
+                    <img class="col-md-10 d-block mb-2" src="./assets/imgs/logo-full.png" alt="">
+                    <p>Our passion for designing, manufacturing, and selling furniture has defined us from day one. Now we’re
+                        sharing that
+                        passion with you – by going on a mission to make the world feel a little more like home.</p>
+                </div>
+        
+                <nav class="footer-category-nav col-12 col-sm-7 col-md-4 col-lg-3">
+                    <h3>CATEGORIES</h3>
+                    <ul class="footer-category-nav-list p-0">
+                        <li class="pb-2"><a class="secondary-text" href="./search-results.html">Sectionals</a></li>
+                        <li class="pb-2"><a class="secondary-text" href="./search-results.html">Sofas</a></li>
+                        <li class="pb-2"><a class="secondary-text" href="./search-results.html">Loveseats</a></li>
+                        <li class="pb-2"><a class="secondary-text" href="./search-results.html">Sleepers</a></li>
+                        <li class="pb-2"><a class="secondary-text" href="./search-results.html">Recliners</a></li>
+                        <li class="pb-2"><a class="secondary-text" href="./search-results.html">Beds</a></li>
+                        <li class="pb-2"><a class="secondary-text" href="./search-results.html">Headboards</a></li>
+                        <li class="pb-2"><a class="secondary-text" href="./search-results.html">Dressers</a></li>
+                        <li class="pb-2"><a class="secondary-text" href="./search-results.html">Dressers</a></li>
+                        <li class="pb-2"><a class="secondary-text" href="./search-results.html">Storage</a></li>
+                        <li class="pb-2"><a class="secondary-text" href="./search-results.html">Tables</a></li>
+                        <li class="pb-2"><a class="secondary-text" href="./search-results.html">Chairs</a></li>
+                        <li class="pb-2"><a class="secondary-text" href="./search-results.html">Height Sets</a></li>
+                        <li class="pb-2"><a class="secondary-text" href="./search-results.html">Tabletop</a></li>
+                    </ul>
+                </nav>
+        
+                <nav class="footer-website-nav col-12 col-sm-5 col-md-3 col-lg-2">
+                    <h3>NAVIGATION</h3>
+                    <ul class="footer-website-nav-list p-0">
+                        <li class="pb-2"><a class="secondary-text" href="./index.html">Home</a></li>
+                        <li class="pb-2"><a class="secondary-text" href="#">Sign In</a></li>
+                        <li class="pb-2"><a class="secondary-text" href="#">Sign Up</a></li>
+                        <li class="pb-2"><a class="secondary-text" href="#">Terms & Conditions</a></li>
+                        <li class="pb-2"><a class="secondary-text" href="#">FAQ</a></li>
+                        <li class="pb-2"><a class="secondary-text" href="#">Help</a></li>
+                    </ul>
+                </nav>
+        
+                <div class="view-options col-auto align-self-center d-none d-lg-inline-block">
+                    <div class="regions my-3">
+                        <span class="highlight-text d-inline-block">Region</span>
+                        <button class="btn border-secondary px-3">U.S.</button>
+                    </div>
+                    <div class="langs my-3">
+                        <span class="highlight-text d-inline-block">LANGUAGE</span>
+                        <button class="btn border-secondary px-3">English</button>
+                    </div>
+                    <div class="currencies my-3">
+                        <span class="highlight-text d-inline-block">CURRENCY</span>
+                        <button class="btn border-secondary px-3">USD</button>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="copyright row limited-width d-block d-md-flex align-items-center justify-content-between px-3 py-2">
+                <p>Copyright© 2020 Selectiff.com All Rights reserved. <span class="d-block">Designed by Mohammed Awad. Developed
+                        by Azamat Nuriddinov.</span></p>
+                <div class="social-icons">
+                    <a class="pl-md-3 pr-3" href="https://www.linkedin.com/in/azamat-nuriddinov-57579868/"><i
+                            class="fab fa-linkedin" aria-hidden="true"></i></a>
+                    <a class="pl-md-3 pr-3" href="https://twitter.com/azamat_nuriddin"><i class="fab fa-twitter"
+                            aria-hidden="true"></i></a>
+                    <a class="pl-md-3 pr-3" href="https://www.facebook.com/cersaie"><i class="fab fa-facebook"
+                            aria-hidden="true"></i></a>
+                    <a class="pl-md-3 pr-3" href="https://github.com/bettercallazamat"><i class="fab fa-github"
+                            aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
