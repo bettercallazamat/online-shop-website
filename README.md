@@ -38,7 +38,7 @@ I built a 2-page online shop for local furniture store:
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check the [issues page](issues/).
+Feel free to check the [issues page](https://github.com/bettercallazamat/online-shop-website/issues).
 
 ## Show your support
 
