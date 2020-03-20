@@ -19,8 +19,8 @@ I built a 2-page online shop for local furniture store:
 
 ## Screenshot
 
-![Screenshot](imgs/screenshot-main.png)
-![Screenshot](imgs/screenshot-search.png)
+![Screenshot](assets/imgs/screenshot-main.png)
+![Screenshot](assets/imgs/screenshot-search.png)
 
 ## Live Demo
 
